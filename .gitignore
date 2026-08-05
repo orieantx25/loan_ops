@@ -1,0 +1,19 @@
+# Dependencies & build
+web/node_modules/
+web/.next/
+web/out/
+web/.vercel/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# OS & logs
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# TypeScript
+web/*.tsbuildinfo

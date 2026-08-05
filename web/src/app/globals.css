@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+:root {
+  --sot-red: #e31c24;
+  --sot-black: #111111;
+  --sot-dark: #222222;
+  --sot-bg: #f6f6f6;
+  --sot-white: #ffffff;
+  --sot-border: #e5e5e5;
+  --sot-muted: #6b6b6b;
+  --sot-green: #1b7a4e;
+  --sot-amber: #b45309;
+}
+
+@theme inline {
+  --color-sot-red: var(--sot-red);
+  --color-sot-black: var(--sot-black);
+  --color-sot-dark: var(--sot-dark);
+  --color-sot-bg: var(--sot-bg);
+  --color-sot-white: var(--sot-white);
+  --color-sot-border: var(--sot-border);
+  --color-sot-muted: var(--sot-muted);
+  --color-sot-green: var(--sot-green);
+  --color-sot-amber: var(--sot-amber);
+  --font-sans: var(--font-dm);
+  --font-display: var(--font-syne);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--sot-bg);
+  color: var(--sot-black);
+  font-family: var(--font-dm), "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-syne), var(--font-dm), sans-serif;
+}
+
+.card {
+  background: var(--sot-white);
+  border: 1px solid var(--sot-border);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04);
+}
+
+.card-pad {
+  padding: 0.85rem 1rem;
+}
+
+.card-pad-sm {
+  padding: 0.75rem 0.9rem;
+}
+
+.card-pad-lg {
+  padding: 1rem 1.15rem;
+}
+
+.kpi-value {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.section-title {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--sot-black);
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.65rem;
+  border-left: 3px solid var(--sot-red);
+  letter-spacing: -0.02em;
+}
+
+.muted {
+  color: var(--sot-muted);
+  font-size: 0.8rem;
+}
+
+.bar-track {
+  height: 8px;
+  background: #eee;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-track.h-1\.5,
+.bar-track.h-1\.5 {
+  height: 6px;
+}
+
+.bar-fill {
+  height: 100%;
+  background: var(--sot-red);
+  border-radius: 999px;
+}
+
+.select-sot,
+.input-sot {
+  appearance: none;
+  background: var(--sot-white);
+  border: 1px solid var(--sot-border);
+  border-radius: 10px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.85rem;
+  color: var(--sot-black);
+  outline: none;
+}
+
+.select-sot:focus,
+.input-sot:focus {
+  border-color: #ccc;
+  box-shadow: 0 0 0 3px rgba(227, 28, 36, 0.12);
+}
+
+.table-sot {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.table-sot th {
+  text-align: left;
+  font-weight: 600;
+  color: #444;
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid var(--sot-border);
+  white-space: nowrap;
+}
+
+.table-sot td {
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+}
+
+.table-sot tr:hover td {
+  background: #fafafa;
+}
+
+.table-sot tr.row-age-warm td {
+  background: #fff4e8;
+}
+
+.table-sot tr.row-age-hot td {
+  background: #fdecec;
+}
+
+.table-sot tr.row-age-warm:hover td,
+.table-sot tr.row-age-hot:hover td {
+  filter: brightness(0.98);
+}
+
+.sticky-col {
+  position: sticky;
+  left: 0;
+  background: var(--sot-white);
+  z-index: 1;
+  box-shadow: 1px 0 0 var(--sot-border);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: 1px solid var(--sot-border);
+  background: #fafafa;
+}
+
+.badge-red {
+  background: #fdecec;
+  border-color: #f5c2c4;
+  color: var(--sot-red);
+}
+
+.badge-green {
+  background: #e8f5ef;
+  border-color: #b7dfc9;
+  color: var(--sot-green);
+}
+
+.badge-amber {
+  background: #fff4e8;
+  border-color: #f0d2ad;
+  color: var(--sot-amber);
+}
+
+.heat-cell {
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  padding: 0.55rem 0.3rem;
+}
+
+.kpi-scroll > * {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 767px) {
+  .kpi-scroll .card {
+    min-width: 148px;
+  }
+}
