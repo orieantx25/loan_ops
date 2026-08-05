@@ -10,6 +10,7 @@ import {
 import { DATA_AS_OF, DATA_CYCLE } from "@/lib/dataMeta";
 import type { DashboardFilters, RawStudent, Student } from "@/lib/types";
 import { DEFAULT_FILTERS } from "@/lib/types";
+import { useIsMobile } from "@/hooks/useIsMobile";
 import { Filters } from "./Filters";
 import { KpiCard } from "./KpiCard";
 import { Funnel } from "./Funnel";
@@ -22,8 +23,10 @@ import { StudentTable } from "./StudentTable";
 import { StudentDrawer } from "./StudentDrawer";
 import { SectionNav } from "./SectionNav";
 import { DevSyncButton } from "./DevSyncButton";
+import { MobileDashboard } from "./mobile/MobileDashboard";
 
 export function Dashboard({ raw }: { raw: RawStudent[] }) {
+  const isMobile = useIsMobile();
   const all = useMemo(() => enrichStudents(raw), [raw]);
   const [filters, setFilters] = useState<DashboardFilters>(DEFAULT_FILTERS);
   const [selected, setSelected] = useState<Student | null>(null);
@@ -63,6 +66,20 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
       filters.search === next.search;
     setFilters(same ? { ...DEFAULT_FILTERS } : next);
   };
+
+  if (isMobile) {
+    return (
+      <MobileDashboard
+        filtered={filtered}
+        a={a}
+        filters={filters}
+        setFilters={setFilters}
+        campuses={campuses}
+        toggleFilter={toggleFilter}
+        reset={reset}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-sot-bg">

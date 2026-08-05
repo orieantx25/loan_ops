@@ -5,9 +5,11 @@ import type { Student } from "@/lib/types";
 export function StudentDrawer({
   student,
   onClose,
+  mobile = false,
 }: {
   student: Student | null;
   onClose: () => void;
+  mobile?: boolean;
 }) {
   if (!student) return null;
 
@@ -19,7 +21,13 @@ export function StudentDrawer({
         aria-label="Close student detail"
         onClick={onClose}
       />
-      <aside className="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-white shadow-xl border-l border-sot-border overflow-y-auto">
+      <aside
+        className={
+          mobile
+            ? "fixed inset-x-0 bottom-0 z-50 max-h-[92vh] w-full bg-white shadow-xl border-t border-sot-border overflow-y-auto rounded-t-2xl safe-bottom animate-slide-up"
+            : "fixed top-0 right-0 z-50 h-full w-full max-w-md bg-white shadow-xl border-l border-sot-border overflow-y-auto"
+        }
+      >
         <div className="sticky top-0 bg-white border-b border-sot-border px-4 py-3 flex items-start justify-between gap-3">
           <div>
             <div className="font-display font-bold text-lg leading-tight">

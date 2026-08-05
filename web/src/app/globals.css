@@ -224,3 +224,114 @@ h3,
     min-width: 148px;
   }
 }
+
+/* ——— Mobile shell ——— */
+.mobile-shell {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.mobile-header {
+  background: var(--sot-black);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.mobile-main {
+  padding-bottom: 0.5rem;
+}
+
+.mobile-card {
+  background: var(--sot-white);
+  border: 1px solid var(--sot-border);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04);
+}
+
+.mobile-hero-card {
+  background: linear-gradient(135deg, #c41820 0%, var(--sot-red) 50%, #a0151c 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 1.1rem 1.15rem;
+  box-shadow: 0 4px 14px rgba(227, 28, 36, 0.28);
+}
+
+.mobile-section-title {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--sot-black);
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid var(--sot-red);
+}
+
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: flex;
+  background: var(--sot-white);
+  border-top: 1px solid var(--sot-border);
+  box-shadow: 0 -2px 12px rgba(17, 17, 17, 0.06);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.mobile-nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  padding: 0.5rem 0.25rem 0.4rem;
+  font-size: 0.58rem;
+  font-weight: 600;
+  color: var(--sot-muted);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-nav-item.active {
+  color: var(--sot-red);
+}
+
+.mobile-main {
+  padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0));
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.25s ease-out;
+}
+
+@media (min-width: 768px) {
+  .mobile-shell,
+  .mobile-header,
+  .mobile-bottom-nav {
+    display: none;
+  }
+}
