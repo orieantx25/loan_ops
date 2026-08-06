@@ -32,8 +32,15 @@ export function DevSyncButton() {
 
       if (push && data.pushed) {
         setMessage(
-          `Deployed ${data.recordCount} records (${data.asOf}). Vercel building…`,
+          `Deployed ${data.recordCount} records (${data.asOf}). Reloading…`,
         );
+        window.setTimeout(() => window.location.reload(), 800);
+        return;
+      }
+
+      if (push && !data.pushed) {
+        setMessage(data.message ?? "Synced — no changes to push.");
+        window.setTimeout(() => window.location.reload(), 800);
         return;
       }
 
