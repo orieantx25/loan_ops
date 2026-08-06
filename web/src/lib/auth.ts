@@ -40,11 +40,15 @@ export async function verifySessionToken(
 }
 
 export function isAuthEnabled(): boolean {
-  return (
-    process.env.NODE_ENV === "production" &&
-    Boolean(process.env.SITE_PASSWORD?.trim()) &&
-    Boolean(process.env.AUTH_SECRET?.trim())
-  );
+  // Password gate on hold — set both env vars and return the check below to enable.
+  void process.env.SITE_PASSWORD;
+  void process.env.AUTH_SECRET;
+  return false;
+  // return (
+  //   process.env.NODE_ENV === "production" &&
+  //   Boolean(process.env.SITE_PASSWORD?.trim()) &&
+  //   Boolean(process.env.AUTH_SECRET?.trim())
+  // );
 }
 
 export function constantTimeEqual(a: string, b: string): boolean {

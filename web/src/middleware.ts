@@ -49,7 +49,7 @@ export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const isProd = process.env.NODE_ENV === "production";
 
-  if (isProd && pathname.startsWith("/api/") && !pathname.startsWith("/api/auth/")) {
+  if (isProd && pathname.startsWith("/api/")) {
     return securityHeaders(
       new NextResponse("Not Found", { status: 404 }),
     );

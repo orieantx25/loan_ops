@@ -4,16 +4,17 @@ import { useMemo, useState } from "react";
 import type { Analytics } from "@/lib/analytics";
 import { DATA_CYCLE, formatAsOfDisplay } from "@/lib/dataMeta";
 import type { DashboardFilters, Student } from "@/lib/types";
+import { DataSheetPanels } from "../DataSheetPanels";
 import { DevSyncButton } from "../DevSyncButton";
 import { Funnel } from "../Funnel";
 import { HBarList } from "../HBarList";
+import { OverlapMatrix } from "../OverlapMatrix";
+import { SectionNav } from "../SectionNav";
 import { StudentDrawer } from "../StudentDrawer";
+import { StudentTable } from "../StudentTable";
 import { MobileCampusCards } from "./MobileCampusCards";
 import { MobileFilterSheet } from "./MobileFilterSheet";
-import { MobileStudentList } from "./MobileStudentList";
 import { MobileVendorList } from "./MobileVendorList";
-
-type Tab = "home" | "pipeline" | "vendors" | "campus" | "students";
 
 type Props = {
   filtered: Student[];
@@ -24,14 +25,6 @@ type Props = {
   reset: () => void;
 };
 
-const TABS: { id: Tab; label: string; icon: string }[] = [
-  { id: "home", label: "Home", icon: "◉" },
-  { id: "pipeline", label: "Pipeline", icon: "▤" },
-  { id: "vendors", label: "Vendors", icon: "◎" },
-  { id: "campus", label: "Campus", icon: "⌂" },
-  { id: "students", label: "Students", icon: "☰" },
-];
-
 export function MobileDashboard({
   filtered,
   a,
@@ -40,21 +33,23 @@ export function MobileDashboard({
   campuses,
   reset,
 }: Props) {
-  const [tab, setTab] = useState<Tab>("home");
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [selected, setSelected] = useState<Student | null>(null);
-  const [studentSegment, setStudentSegment] = useState<
-    "pending" | "fldg" | "vidya" | "critical" | "multi"
-  >("pending");
-  const [intakeOpen, setIntakeOpen] = useState(false);
-  const [riskOpen, setRiskOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
 
   const sst = a.dataSheet.initialInputSst;
+  const latest = a.dataSheet.latestInput;
   const sstCount = (label: string) =>
     sst.rows.find((r) => r.label === label)?.count ?? 0;
+  const sstPct = (n: number) =>
+    sst.total ? `${((n / sst.total) * 100).toFixed(0)}% of leads` : undefined;
+  const latestCount = (label: string) =>
+    latest.rows.find((r) => r.label === label)?.count ?? 0;
+  const latestPct = (n: number) =>
+    latest.total ? `${((n / latest.total) * 100).toFixed(0)}% of leads` : undefined;
 
   const pct = (n: number) =>
-    a.needLoan ? `${((n / a.needLoan) * 100).toFixed(0)}%` : "—";
+    a.needLoan ? `${((n / a.needLoan) * 100).toFixed(0)}% of need` : undefined;
 
   const activeFilterCount = useMemo(() => {
     let n = 0;
@@ -69,25 +64,6 @@ export function MobileDashboard({
     return n;
   }, [filters]);
 
-  const segmentStudents = useMemo(() => {
-    switch (studentSegment) {
-      case "fldg":
-        return filtered.filter((s) => s.needFldg);
-      case "vidya":
-        return filtered.filter((s) => s.needVidyalakshmi);
-      case "critical":
-        return filtered.filter((s) => s.critical);
-      case "multi":
-        return filtered
-          .filter((s) => s.duplicateVendor)
-          .sort((x, y) => y.vendorCount - x.vendorCount);
-      default:
-        return a.topPending.filter((s) =>
-          filtered.some((f) => f.name === s.name && f.mobile === s.mobile),
-        );
-    }
-  }, [studentSegment, filtered, a.topPending]);
-
   return (
     <div className="mobile-shell min-h-screen bg-sot-bg flex flex-col">
       <header className="mobile-header shrink-0">
@@ -101,10 +77,10 @@ export function MobileDashboard({
             />
             <div className="min-w-0">
               <div className="font-display font-bold text-sm leading-tight">
-                Loan Ops
+                Loan Operations
               </div>
               <div className="text-[0.65rem] text-white/55 truncate">
-                {DATA_CYCLE} · {formatAsOfDisplay()}
+                {DATA_CYCLE} · {formatAsOfDisplay()} · {a.total} records
               </div>
             </div>
           </div>
@@ -127,228 +103,266 @@ export function MobileDashboard({
         </div>
         {activeFilterCount > 0 ? (
           <div className="px-4 pb-2 text-[0.72rem] text-white/70">
-            {filtered.length} of {a.total} students ·{" "}
-            <button
-              type="button"
-              className="underline"
-              onClick={reset}
-            >
+            {filtered.length} in view ·{" "}
+            <button type="button" className="underline" onClick={reset}>
               clear filters
             </button>
           </div>
         ) : null}
+        <div className="px-4 pb-2 sticky top-0 z-20 bg-sot-black">
+          <SectionNav />
+        </div>
       </header>
 
-      <main className="flex-1 overflow-y-auto px-4 py-4 mobile-main">
-        {tab === "home" ? (
-          <div className="space-y-4">
-            <div className="mobile-hero-card w-full">
-              <div className="text-[0.7rem] uppercase tracking-wider text-white/70 font-semibold">
-                Need Loan
-              </div>
-              <div className="font-display font-bold text-4xl mt-1 tabular-nums">
-                {a.needLoan}
-              </div>
-            </div>
-
+      <main className="flex-1 overflow-y-auto px-4 py-4 mobile-main-scroll space-y-6">
+        <section id="summary" className="scroll-mt-36 space-y-4">
+          <div className="space-y-2">
+            <SectionLabel>Initial Input (By SST)</SectionLabel>
             <div className="grid grid-cols-2 gap-2">
-              <MetricTile
+              <KpiTile label="Total Leads" value={sst.total} hero />
+              <KpiTile
+                label="Loan required — Yes"
+                value={sstCount("Loan required — Yes")}
+                hint={sstPct(sstCount("Loan required — Yes"))}
+                tone="red"
+              />
+              <KpiTile
+                label="Loan required — No"
+                value={sstCount("Loan required — No")}
+                hint={sstPct(sstCount("Loan required — No"))}
+              />
+              <KpiTile
+                label="Drop"
+                value={sstCount("Drop")}
+                hint={sstPct(sstCount("Drop"))}
+                tone="amber"
+              />
+              <KpiTile
+                label="DNR"
+                value={sstCount("DNR")}
+                hint={sstPct(sstCount("DNR"))}
+                tone="red"
+              />
+              <KpiTile
+                label="Blanks"
+                value={sstCount("Blanks")}
+                hint={sstPct(sstCount("Blanks"))}
+                tone="amber"
+              />
+            </div>
+            {sstCount("Any other input") > 0 ? (
+              <KpiTile
+                label="Any other input"
+                value={sstCount("Any other input")}
+                hint={sstPct(sstCount("Any other input"))}
+              />
+            ) : null}
+          </div>
+
+          <div className="space-y-2">
+            <SectionLabel>Pipeline health</SectionLabel>
+            <KpiTile label="Need Loan" value={a.needLoan} hero tone="red" />
+            <div className="grid grid-cols-2 gap-2">
+              <KpiTile
                 label="Processing"
                 value={a.processing}
                 hint={pct(a.processing)}
+                tone="blue"
               />
-              <MetricTile
+              <KpiTile
                 label="Sanctioned"
                 value={a.sanctioned}
                 hint={pct(a.sanctioned)}
+                tone="green"
               />
-              <MetricTile
+              <KpiTile
                 label="Disbursed"
                 value={a.disbursed}
                 hint={pct(a.disbursed)}
+                tone="green"
               />
-              <MetricTile
+              <KpiTile
                 label="Rejected"
                 value={a.rejected}
                 hint={pct(a.rejected)}
+                tone="red"
+              />
+              <KpiTile
+                label="Initially Yes but Now No"
+                value={latestCount("Initially Yes but Now No")}
+                hint={latestPct(latestCount("Initially Yes but Now No"))}
+                tone="amber"
+              />
+              <KpiTile
+                label="Initially Yes but not sure"
+                value={latestCount("Initially Yes but not sure")}
+                hint={latestPct(latestCount("Initially Yes but not sure"))}
+                tone="amber"
               />
             </div>
-
-            <Section title="Attention">
-              <div className="grid grid-cols-2 gap-2">
-                <AttentionTile
-                  label="Risk cases"
-                  value={a.riskCases}
-                  tone="red"
-                />
-                <AttentionTile
-                  label="Need FLDG"
-                  value={a.needFldg}
-                  tone="red"
-                />
-                <AttentionTile
-                  label="Vidyalakshmi"
-                  value={a.needVidyalakshmi}
-                  tone="amber"
-                />
-                <AttentionTile
-                  label="Not started"
-                  value={a.notStarted}
-                  tone="amber"
-                />
-              </div>
-            </Section>
-
-            <Section title="SST initial input">
-              <div className="grid grid-cols-3 gap-2">
-                <MiniKpi label="Leads" value={sst.total} />
-                <MiniKpi label="Yes" value={sstCount("Loan required — Yes")} />
-                <MiniKpi label="No" value={sstCount("Loan required — No")} />
-                <MiniKpi label="Drop" value={sstCount("Drop")} />
-                <MiniKpi label="DNR" value={sstCount("DNR")} />
-                <MiniKpi label="Blanks" value={sstCount("Blanks")} />
-              </div>
-            </Section>
-
-            <Collapsible
-              title="Intake details"
-              open={intakeOpen}
-              onToggle={() => setIntakeOpen((o) => !o)}
-            >
-              <div className="space-y-2 text-[0.8rem]">
-                {a.dataSheet.latestInput.rows.slice(0, 8).map((r) => (
-                  <div
-                    key={r.label}
-                    className="flex justify-between py-1 border-b border-sot-border/50 last:border-0"
-                  >
-                    <span className="text-sot-black/70 pr-2">{r.label}</span>
-                    <span className="font-semibold tabular-nums">{r.count}</span>
-                  </div>
-                ))}
-              </div>
-            </Collapsible>
-
-            <Collapsible
-              title="Risk summary"
-              open={riskOpen}
-              onToggle={() => setRiskOpen((o) => !o)}
-            >
-              <div className="space-y-2">
-                {a.risk.slice(0, 6).map((r) => (
-                  <div key={r.flag} className="flex items-center gap-2">
-                    <div className="flex-1 text-[0.78rem] truncate">{r.flag}</div>
-                    <div className="font-semibold tabular-nums">{r.count}</div>
-                  </div>
-                ))}
-              </div>
-            </Collapsible>
           </div>
-        ) : null}
 
-        {tab === "pipeline" ? (
-          <div className="space-y-4">
-            <Funnel rows={a.funnel} />
-            <HBarList
-              title="Stage distribution"
-              subtitle="One canonical stage per student"
-              items={a.stageDist.map((s) => ({
-                label: s.stage,
-                count: s.count,
-              }))}
-              useStageColors
-            />
-            <HBarList
-              title="Drop-off reasons"
-              items={a.reasons.map((r) => ({
-                label: r.bucket,
-                count: r.count,
-              }))}
-            />
-          </div>
-        ) : null}
-
-        {tab === "vendors" ? (
-          <div className="space-y-3">
-            <p className="text-[0.78rem] text-sot-black/65 px-0.5">
-              Tap a vendor to expand metrics. Applications ≠ unique students.
-            </p>
-            <MobileVendorList stats={a.vendorStats} />
-            <div className="mobile-card">
-              <div className="font-display font-bold text-sm mb-2">
-                Portfolio totals
-              </div>
-              <div className="grid grid-cols-2 gap-2 text-[0.8rem]">
-                <div className="rounded-lg bg-[#f5f5f5] p-2">
-                  <div className="text-sot-black/55 text-[0.65rem]">Unique w/ vendor</div>
-                  <div className="font-bold text-lg">{a.withVendor}</div>
-                </div>
-                <div className="rounded-lg bg-[#f5f5f5] p-2">
-                  <div className="text-sot-black/55 text-[0.65rem]">Applications</div>
-                  <div className="font-bold text-lg">{a.totalApps}</div>
-                </div>
-              </div>
+          <div className="space-y-2">
+            <SectionLabel>Attention needed</SectionLabel>
+            <div className="grid grid-cols-2 gap-2">
+              <KpiTile label="Risk Cases" value={a.riskCases} tone="red" />
+              <KpiTile label="Need FLDG" value={a.needFldg} tone="red" />
+              <KpiTile
+                label="Need Vidyalakshmi"
+                value={a.needVidyalakshmi}
+                tone="amber"
+              />
+              <KpiTile label="Not Started" value={a.notStarted} tone="amber" />
+              <KpiTile label="Dup Vendors" value={a.dupVendors} tone="amber" />
             </div>
           </div>
-        ) : null}
 
-        {tab === "campus" ? (
-          <div className="space-y-3">
-            <p className="text-[0.78rem] text-sot-black/65 px-0.5">
-              Need Loan heat by campus — totals match funnel KPIs.
-            </p>
-            <MobileCampusCards rows={a.campuses} />
-          </div>
-        ) : null}
-
-        {tab === "students" ? (
-          <div className="space-y-3">
-            <div className="flex gap-1.5 overflow-x-auto pb-1 -mx-1 px-1">
-              {(
-                [
-                  ["pending", "Top pending"],
-                  ["fldg", "FLDG"],
-                  ["vidya", "Vidyalakshmi"],
-                  ["critical", "Critical"],
-                  ["multi", "Multi-vendor"],
-                ] as const
-              ).map(([id, label]) => (
-                <button
-                  key={id}
-                  type="button"
-                  onClick={() => setStudentSegment(id)}
-                  className={`shrink-0 px-3 py-1.5 rounded-full text-[0.72rem] font-semibold border ${
-                    studentSegment === id
-                      ? "bg-sot-red text-white border-sot-red"
-                      : "bg-white border-sot-border"
-                  }`}
-                >
-                  {label}
-                </button>
-              ))}
-            </div>
-            <MobileStudentList
-              students={segmentStudents}
-              onSelect={setSelected}
-            />
-          </div>
-        ) : null}
-      </main>
-
-      <nav className="mobile-bottom-nav shrink-0" aria-label="Main navigation">
-        {TABS.map((t) => (
           <button
-            key={t.id}
             type="button"
-            onClick={() => setTab(t.id)}
-            className={`mobile-nav-item ${tab === t.id ? "active" : ""}`}
+            className="text-[0.75rem] font-semibold text-sot-black/70 underline-offset-2 hover:underline"
+            onClick={() => setMoreOpen((o) => !o)}
           >
-            <span className="text-base leading-none" aria-hidden>
-              {t.icon}
-            </span>
-            <span>{t.label}</span>
+            {moreOpen ? "Hide more metrics" : "More metrics"}
           </button>
-        ))}
-      </nav>
+          {moreOpen ? (
+            <div className="grid grid-cols-2 gap-2">
+              <KpiTile label="Total Students" value={a.total} />
+              <KpiTile label="With Vendor" value={a.withVendor} />
+              <KpiTile label="Avg Vendors" value={a.avgVendors.toFixed(2)} />
+              <KpiTile label="Docs Pending" value={a.docsPending} />
+            </div>
+          ) : null}
+        </section>
+
+        <section id="vendors" className="scroll-mt-36 space-y-3">
+          <SectionLabel>Vendors</SectionLabel>
+          <MobileVendorList stats={a.vendorStats} />
+          <HBarList
+            title="Vendors per Student"
+            subtitle="Fixes duplicate counting illusion"
+            items={a.vendorDist.map((r) => ({
+              label: r.label,
+              count: r.count,
+            }))}
+          />
+          <div className="mobile-card">
+            <div className="font-display font-bold text-sm mb-2">
+              Unique vs Applications
+            </div>
+            <div className="grid grid-cols-2 gap-2 text-[0.8rem]">
+              <StatBlock label="Unique with vendor" value={a.withVendor} />
+              <StatBlock label="Total applications" value={a.totalApps} />
+              <StatBlock label="Multi-vendor students" value={a.dupVendors} />
+              <StatBlock
+                label="Avg vendors / shared"
+                value={a.avgVendors.toFixed(2)}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="intake" className="scroll-mt-36 space-y-3">
+          <SectionLabel>Intake</SectionLabel>
+          <DataSheetPanels
+            initialInputSst={a.dataSheet.initialInputSst}
+            latestInput={a.dataSheet.latestInput}
+            loanBifurcation={a.dataSheet.loanBifurcation}
+            reasonsNotStarted={a.dataSheet.reasonsNotStarted}
+            initialCaseStatus={a.dataSheet.initialCaseStatus}
+            currentCaseStatus={a.dataSheet.currentCaseStatus}
+          />
+        </section>
+
+        <section id="campus" className="scroll-mt-36 space-y-3">
+          <SectionLabel>Campus</SectionLabel>
+          <MobileCampusCards rows={a.campuses} />
+        </section>
+
+        <section id="pipeline" className="scroll-mt-36 space-y-3">
+          <SectionLabel>Pipeline</SectionLabel>
+          <Funnel rows={a.funnel} />
+          <HBarList
+            title="Loan Status Distribution"
+            subtitle="Canonical stage — one stage per student"
+            items={a.stageDist.map((s) => ({
+              label: s.stage,
+              count: s.count,
+            }))}
+            useStageColors
+          />
+        </section>
+
+        <section id="risk" className="scroll-mt-36 space-y-3">
+          <SectionLabel>Risk</SectionLabel>
+          <HBarList
+            title="Risk Dashboard"
+            items={a.risk.map((r) => ({
+              label: r.flag,
+              count: r.count,
+            }))}
+            accent
+          />
+          <HBarList
+            title="Drop-off Reasons"
+            items={a.reasons.map((r) => ({
+              label: r.bucket,
+              count: r.count,
+            }))}
+          />
+        </section>
+
+        <section id="students" className="scroll-mt-36 space-y-3 pb-8">
+          <SectionLabel>Students</SectionLabel>
+          <StudentTable
+            title="Top Pending Students"
+            students={a.topPending}
+            onSelect={setSelected}
+            onClearFilters={reset}
+            collapsible
+            defaultOpen={false}
+          />
+          <StudentTable
+            title="Need FLDG Attention"
+            students={filtered.filter((s) => s.needFldg)}
+            onSelect={setSelected}
+            onClearFilters={reset}
+            collapsible
+            defaultOpen={false}
+          />
+          <StudentTable
+            title="Need Vidyalakshmi Attention"
+            students={filtered.filter((s) => s.needVidyalakshmi)}
+            onSelect={setSelected}
+            onClearFilters={reset}
+            collapsible
+            defaultOpen={false}
+          />
+          <StudentTable
+            title="Critical Cases"
+            students={filtered.filter((s) => s.critical)}
+            onSelect={setSelected}
+            onClearFilters={reset}
+            collapsible
+            defaultOpen={false}
+          />
+          <div className="space-y-3">
+            <div className="font-display text-sm font-bold text-sot-black">
+              Multi-vendor
+            </div>
+            <OverlapMatrix overlap={a.overlap} />
+            <StudentTable
+              title="Duplicate Vendor Students"
+              students={filtered
+                .filter((s) => s.duplicateVendor)
+                .sort((x, y) => y.vendorCount - x.vendorCount)}
+              onSelect={setSelected}
+              onClearFilters={reset}
+              collapsible
+              defaultOpen={false}
+            />
+          </div>
+        </section>
+      </main>
 
       <MobileFilterSheet
         open={filtersOpen}
@@ -368,105 +382,59 @@ export function MobileDashboard({
   );
 }
 
-function Section({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
+function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div>
-      <h2 className="mobile-section-title">{title}</h2>
+    <h2 className="section-label font-display text-sm font-bold text-sot-black">
       {children}
-    </div>
+    </h2>
   );
 }
 
-function MetricTile({
+function KpiTile({
   label,
   value,
   hint,
+  tone = "neutral",
+  hero,
 }: {
   label: string;
-  value: number;
+  value: string | number;
   hint?: string;
+  tone?: "neutral" | "red" | "amber" | "green" | "blue";
+  hero?: boolean;
 }) {
+  const toneClass = {
+    neutral: "border-sot-border",
+    red: "border-l-4 border-l-sot-red",
+    amber: "border-l-4 border-l-sot-amber",
+    green: "border-l-4 border-l-sot-green",
+    blue: "border-l-4 border-l-[#2563eb]",
+  }[tone];
+
   return (
-    <div className="mobile-card text-left">
-      <div className="text-[0.65rem] uppercase tracking-wide text-sot-black/55 font-semibold">
+    <div className={`mobile-card ${toneClass} ${hero ? "col-span-2" : ""}`}>
+      <div className="text-[0.62rem] uppercase tracking-wide text-sot-black/55 font-semibold leading-snug">
         {label}
       </div>
-      <div className="font-display font-bold text-2xl tabular-nums mt-0.5">
+      <div
+        className={`font-display font-bold tabular-nums mt-0.5 ${
+          hero ? "text-3xl" : "text-xl"
+        }`}
+      >
         {value}
       </div>
       {hint ? (
-        <div className="text-[0.68rem] text-sot-black/50">{hint} of need</div>
+        <div className="text-[0.65rem] text-sot-black/50 mt-0.5">{hint}</div>
       ) : null}
     </div>
   );
 }
 
-function AttentionTile({
-  label,
-  value,
-  tone,
-}: {
-  label: string;
-  value: number;
-  tone: "red" | "amber";
-}) {
+function StatBlock({ label, value }: { label: string; value: string | number }) {
   return (
-    <div
-      className={`rounded-xl border p-3 text-left ${
-        tone === "red"
-          ? "border-[#f5c2c4] bg-[#fdecec]"
-          : "border-[#f0d2ad] bg-[#fff4e8]"
-      }`}
-    >
-      <div className="text-[0.65rem] font-semibold text-sot-black/65">{label}</div>
-      <div
-        className={`font-display font-bold text-xl tabular-nums ${
-          tone === "red" ? "text-sot-red" : "text-sot-amber"
-        }`}
-      >
-        {value}
-      </div>
-    </div>
-  );
-}
-
-function MiniKpi({ label, value }: { label: string; value: number }) {
-  return (
-    <div className="rounded-lg bg-white border border-sot-border px-2 py-2 text-center">
-      <div className="text-[0.58rem] uppercase text-sot-black/50">{label}</div>
+    <div className="rounded-lg bg-[#f5f5f5] p-2">
+      <div className="text-[0.62rem] uppercase text-sot-black/50">{label}</div>
       <div className="font-semibold tabular-nums">{value}</div>
-    </div>
-  );
-}
-
-function Collapsible({
-  title,
-  open,
-  onToggle,
-  children,
-}: {
-  title: string;
-  open: boolean;
-  onToggle: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="mobile-card">
-      <button
-        type="button"
-        className="w-full flex items-center justify-between font-display font-bold text-sm"
-        onClick={onToggle}
-      >
-        {title}
-        <span className="text-sot-black/40">{open ? "▾" : "▸"}</span>
-      </button>
-      {open ? <div className="mt-3 pt-3 border-t border-sot-border">{children}</div> : null}
     </div>
   );
 }
