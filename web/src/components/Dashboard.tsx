@@ -7,7 +7,7 @@ import {
   computeAnalytics,
   enrichStudents,
 } from "@/lib/analytics";
-import { DATA_AS_OF, DATA_CYCLE } from "@/lib/dataMeta";
+import { DATA_CYCLE, formatAsOfParts } from "@/lib/dataMeta";
 import type { DashboardFilters, RawStudent, Student } from "@/lib/types";
 import { DEFAULT_FILTERS } from "@/lib/types";
 import { useIsMobile } from "@/hooks/useIsMobile";
@@ -53,19 +53,7 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
 
   const reset = () => setFilters({ ...DEFAULT_FILTERS });
 
-  const toggleFilter = (patch: Partial<DashboardFilters>) => {
-    const next = { ...DEFAULT_FILTERS, ...patch };
-    const same =
-      filters.campus === next.campus &&
-      filters.vendor === next.vendor &&
-      filters.stage === next.stage &&
-      filters.critical === next.critical &&
-      filters.loanRequired === next.loanRequired &&
-      filters.duplicateVendor === next.duplicateVendor &&
-      filters.attentionFlag === next.attentionFlag &&
-      filters.search === next.search;
-    setFilters(same ? { ...DEFAULT_FILTERS } : next);
-  };
+  const asOf = formatAsOfParts();
 
   if (isMobile) {
     return (
@@ -75,7 +63,6 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
         filters={filters}
         setFilters={setFilters}
         campuses={campuses}
-        toggleFilter={toggleFilter}
         reset={reset}
       />
     );
@@ -103,7 +90,7 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
           <div className="flex gap-4 sm:gap-5 text-right shrink-0 items-center">
             <DevSyncButton />
             <Meta label="Cycle" value={DATA_CYCLE} />
-            <Meta label="As of" value={DATA_AS_OF} />
+            <Meta label="As of" value={asOf.date} sub={asOf.time} />
             <Meta label="Records" value={String(a.total)} />
           </div>
         </div>
@@ -171,40 +158,30 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
               value={a.needLoan}
               hero
               tone="red"
-              active={filters.loanRequired === "Yes" && filters.stage === "All"}
-              onClick={() => toggleFilter({ loanRequired: "Yes" })}
             />
             <KpiCard
               label="Processing"
               value={a.processing}
               tone="blue"
               hint={pct(a.processing)}
-              active={filters.stage === "Processing"}
-              onClick={() => toggleFilter({ stage: "Processing" })}
             />
             <KpiCard
               label="Sanctioned"
               value={a.sanctioned}
               tone="green"
               hint={pct(a.sanctioned)}
-              active={filters.stage === "Sanctioned"}
-              onClick={() => toggleFilter({ stage: "Sanctioned" })}
             />
             <KpiCard
               label="Disbursed"
               value={a.disbursed}
               tone="green"
               hint={pct(a.disbursed)}
-              active={filters.stage === "Disbursed"}
-              onClick={() => toggleFilter({ stage: "Disbursed" })}
             />
             <KpiCard
               label="Rejected"
               value={a.rejected}
               tone="red"
               hint={pct(a.rejected)}
-              active={filters.stage === "Rejected"}
-              onClick={() => toggleFilter({ stage: "Rejected" })}
             />
             <KpiCard
               label="Initially Yes but Now No"
@@ -226,38 +203,26 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
               label="Risk Cases"
               value={a.riskCases}
               tone="red"
-              active={filters.attentionFlag === "Risk"}
-              onClick={() => toggleFilter({ attentionFlag: "Risk" })}
             />
             <KpiCard
               label="Need FLDG"
               value={a.needFldg}
               tone="red"
-              active={filters.attentionFlag === "FLDG"}
-              onClick={() => toggleFilter({ attentionFlag: "FLDG" })}
             />
             <KpiCard
               label="Need Vidyalakshmi"
               value={a.needVidyalakshmi}
               tone="amber"
-              active={filters.attentionFlag === "Vidyalakshmi"}
-              onClick={() => toggleFilter({ attentionFlag: "Vidyalakshmi" })}
             />
             <KpiCard
               label="Not Started"
               value={a.notStarted}
               tone="amber"
-              active={filters.stage === "Not Started"}
-              onClick={() =>
-                toggleFilter({ loanRequired: "Yes", stage: "Not Started" })
-              }
             />
             <KpiCard
               label="Dup Vendors"
               value={a.dupVendors}
               tone="amber"
-              active={filters.duplicateVendor === "Yes"}
-              onClick={() => toggleFilter({ duplicateVendor: "Yes" })}
             />
           </div>
 
@@ -439,13 +404,24 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-function Meta({ label, value }: { label: string; value: string }) {
+function Meta({
+  label,
+  value,
+  sub,
+}: {
+  label: string;
+  value: string;
+  sub?: string;
+}) {
   return (
     <div>
       <div className="text-[0.58rem] uppercase tracking-wider text-white/40 leading-none">
         {label}
       </div>
       <div className="font-semibold text-[0.8rem] mt-0.5 leading-tight">{value}</div>
+      {sub ? (
+        <div className="text-[0.65rem] text-white/55 mt-0.5 tabular-nums">{sub}</div>
+      ) : null}
     </div>
   );
 }

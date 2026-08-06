@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { Analytics } from "@/lib/analytics";
-import { DATA_AS_OF, DATA_CYCLE } from "@/lib/dataMeta";
+import { DATA_CYCLE, formatAsOfDisplay } from "@/lib/dataMeta";
 import type { DashboardFilters, Student } from "@/lib/types";
 import { DevSyncButton } from "../DevSyncButton";
 import { Funnel } from "../Funnel";
@@ -21,7 +21,6 @@ type Props = {
   filters: DashboardFilters;
   setFilters: (f: DashboardFilters) => void;
   campuses: string[];
-  toggleFilter: (patch: Partial<DashboardFilters>) => void;
   reset: () => void;
 };
 
@@ -39,7 +38,6 @@ export function MobileDashboard({
   filters,
   setFilters,
   campuses,
-  toggleFilter,
   reset,
 }: Props) {
   const [tab, setTab] = useState<Tab>("home");
@@ -106,7 +104,7 @@ export function MobileDashboard({
                 Loan Ops
               </div>
               <div className="text-[0.65rem] text-white/55 truncate">
-                {DATA_CYCLE} · {DATA_AS_OF}
+                {DATA_CYCLE} · {formatAsOfDisplay()}
               </div>
             </div>
           </div>
@@ -144,52 +142,35 @@ export function MobileDashboard({
       <main className="flex-1 overflow-y-auto px-4 py-4 mobile-main">
         {tab === "home" ? (
           <div className="space-y-4">
-            <button
-              type="button"
-              onClick={() =>
-                toggleFilter({ loanRequired: "Yes", stage: "All" })
-              }
-              className="mobile-hero-card w-full text-left"
-            >
+            <div className="mobile-hero-card w-full">
               <div className="text-[0.7rem] uppercase tracking-wider text-white/70 font-semibold">
                 Need Loan
               </div>
               <div className="font-display font-bold text-4xl mt-1 tabular-nums">
                 {a.needLoan}
               </div>
-              <div className="text-[0.75rem] text-white/65 mt-1">
-                Tap to filter pipeline students
-              </div>
-            </button>
+            </div>
 
             <div className="grid grid-cols-2 gap-2">
               <MetricTile
                 label="Processing"
                 value={a.processing}
                 hint={pct(a.processing)}
-                onClick={() => toggleFilter({ stage: "Processing" })}
-                active={filters.stage === "Processing"}
               />
               <MetricTile
                 label="Sanctioned"
                 value={a.sanctioned}
                 hint={pct(a.sanctioned)}
-                onClick={() => toggleFilter({ stage: "Sanctioned" })}
-                active={filters.stage === "Sanctioned"}
               />
               <MetricTile
                 label="Disbursed"
                 value={a.disbursed}
                 hint={pct(a.disbursed)}
-                onClick={() => toggleFilter({ stage: "Disbursed" })}
-                active={filters.stage === "Disbursed"}
               />
               <MetricTile
                 label="Rejected"
                 value={a.rejected}
                 hint={pct(a.rejected)}
-                onClick={() => toggleFilter({ stage: "Rejected" })}
-                active={filters.stage === "Rejected"}
               />
             </div>
 
@@ -199,33 +180,21 @@ export function MobileDashboard({
                   label="Risk cases"
                   value={a.riskCases}
                   tone="red"
-                  active={filters.attentionFlag === "Risk"}
-                  onClick={() => toggleFilter({ attentionFlag: "Risk" })}
                 />
                 <AttentionTile
                   label="Need FLDG"
                   value={a.needFldg}
                   tone="red"
-                  active={filters.attentionFlag === "FLDG"}
-                  onClick={() => toggleFilter({ attentionFlag: "FLDG" })}
                 />
                 <AttentionTile
                   label="Vidyalakshmi"
                   value={a.needVidyalakshmi}
                   tone="amber"
-                  active={filters.attentionFlag === "Vidyalakshmi"}
-                  onClick={() =>
-                    toggleFilter({ attentionFlag: "Vidyalakshmi" })
-                  }
                 />
                 <AttentionTile
                   label="Not started"
                   value={a.notStarted}
                   tone="amber"
-                  active={filters.stage === "Not Started"}
-                  onClick={() =>
-                    toggleFilter({ loanRequired: "Yes", stage: "Not Started" })
-                  }
                 />
               </div>
             </Section>
@@ -418,21 +387,13 @@ function MetricTile({
   label,
   value,
   hint,
-  onClick,
-  active,
 }: {
   label: string;
   value: number;
   hint?: string;
-  onClick: () => void;
-  active?: boolean;
 }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`mobile-card text-left ${active ? "ring-2 ring-sot-red" : ""}`}
-    >
+    <div className="mobile-card text-left">
       <div className="text-[0.65rem] uppercase tracking-wide text-sot-black/55 font-semibold">
         {label}
       </div>
@@ -442,7 +403,7 @@ function MetricTile({
       {hint ? (
         <div className="text-[0.68rem] text-sot-black/50">{hint} of need</div>
       ) : null}
-    </button>
+    </div>
   );
 }
 
@@ -450,24 +411,18 @@ function AttentionTile({
   label,
   value,
   tone,
-  onClick,
-  active,
 }: {
   label: string;
   value: number;
   tone: "red" | "amber";
-  onClick: () => void;
-  active?: boolean;
 }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
+    <div
       className={`rounded-xl border p-3 text-left ${
         tone === "red"
           ? "border-[#f5c2c4] bg-[#fdecec]"
           : "border-[#f0d2ad] bg-[#fff4e8]"
-      } ${active ? "ring-2 ring-sot-red" : ""}`}
+      }`}
     >
       <div className="text-[0.65rem] font-semibold text-sot-black/65">{label}</div>
       <div
@@ -477,7 +432,7 @@ function AttentionTile({
       >
         {value}
       </div>
-    </button>
+    </div>
   );
 }
 

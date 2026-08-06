@@ -9,6 +9,7 @@ import {
   validateSheetHeaders,
   validateStudentSnapshot,
 } from "./sheetTransform";
+
 export type SyncResult =
   | {
       ok: true;
@@ -17,14 +18,6 @@ export type SyncResult =
       asOf: string;
     }
   | { ok: false; message: string };
-
-function formatAsOfLabel(d = new Date()): string {
-  return d.toLocaleDateString("en-GB", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
-  });
-}
 
 export async function syncFromGoogleSheet(): Promise<SyncResult> {
   const fetched = await fetchSheetCsv();
@@ -50,7 +43,7 @@ export async function syncFromGoogleSheet(): Promise<SyncResult> {
     return { ok: false, message: validation.message };
   }
 
-  const asOf = formatAsOfLabel();
+  const syncedAt = new Date().toISOString();
   const needLoanYes = countNeedLoanYes(students);
 
   const dataDir = path.join(process.cwd(), "src", "data");
@@ -63,11 +56,22 @@ export async function syncFromGoogleSheet(): Promise<SyncResult> {
     "utf-8",
   );
 
-  const metaContent = `/** Snapshot metadata for the dashboard header (from last sheet sync). */
-export const DATA_AS_OF = "${asOf}";
-export const DATA_CYCLE = "2026 Cycle";
+  const timestampContent = `/** ISO timestamp of last sheet sync — updated by Sync sheet / extract. */
+export const DATA_SYNCED_AT = "${syncedAt}";
 `;
-  await fs.writeFile(path.join(libDir, "dataMeta.ts"), metaContent, "utf-8");
+  await fs.writeFile(
+    path.join(libDir, "syncTimestamp.ts"),
+    timestampContent,
+    "utf-8",
+  );
+
+  const asOf = new Date(syncedAt).toLocaleString("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 
   return {
     ok: true,
