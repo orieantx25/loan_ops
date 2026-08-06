@@ -14,43 +14,45 @@ Open http://localhost:3000
 
 ## Deploy to Vercel
 
-**Option A — CLI**
+The repo root includes `vercel.json` so GitHub deploys build from the `web/` folder automatically.
 
-```bash
-cd web
-npx vercel
-```
+1. Import [orieantx25/loan_ops](https://github.com/orieantx25/loan_ops) on [vercel.com/new](https://vercel.com/new)
+2. **Root Directory:** leave as `.` (repo root) — `vercel.json` handles the `web/` subfolder
+3. No env vars required for static data workflow
 
-**Option B — GitHub**
-
-1. Push the `web` folder (or monorepo root with Root Directory = `web`)
-2. Import project in [vercel.com/new](https://vercel.com/new)
-3. Framework: Next.js · Build: `next build` · Output: default
+Or set **Root Directory = `web`** in Vercel project settings (either approach works).
 
 ## Refresh data
 
-**Option A — Sync button (localhost, no API key)**
+**Option A — Sync & deploy (localhost, one click)**
 
-1. Run `npm run dev` locally
-2. Click **Sync sheet** in the header (dev only)
-3. Sheet must be link-viewable: [Master data tab](https://docs.google.com/spreadsheets/d/1SO9nc0jSN4ifviovO3IezRshTCbj66IIn38NT5J4yhI)
-4. Commit `src/data/students.json` and `src/lib/dataMeta.ts`, then push to deploy
+1. Run `npm run dev` in `web/`
+2. Click **Sync & deploy** in the header (dev only)
+3. This syncs the sheet, commits `students.json` + `syncTimestamp.ts`, pushes to GitHub, and Vercel auto-deploys
 
-Optional env in `.env.local` (defaults work out of the box):
-
-```env
-GOOGLE_SHEET_ID=1SO9nc0jSN4ifviovO3IezRshTCbj66IIn38NT5J4yhI
-SHEET_TAB_NAME=Master data
-```
-
-**Option B — Excel extract**
+**Option B — CLI**
 
 ```bash
-# from repo root
+# from repo root — sync + commit + push
+npm run sync:push
+
+# or from web/ only
+cd web && npm run sync:push
+```
+
+**Option C — Sync only (no deploy)**
+
+Click **Sync** in the header, or run `cd web && npm run sync`.
+
+Sheet must be link-viewable: [Master data tab](https://docs.google.com/spreadsheets/d/1SO9nc0jSN4ifviovO3IezRshTCbj66IIn38NT5J4yhI)
+
+**Option D — Excel extract**
+
+```bash
 python extract_json.py
 ```
 
-Then commit updated `src/data/students.json` and `src/lib/dataMeta.ts`.
+Then run `npm run sync:push` or commit manually.
 
 ## Layout (scroll sections)
 

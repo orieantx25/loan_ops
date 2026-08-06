@@ -13,7 +13,6 @@ Scroll-section layout with sticky filters/nav, clickable KPIs, filter chips/pres
 
 Refresh data (no API key):
 
-1. **Local dev — Sync button** (header, localhost only): fetches the public Google Sheet and updates `students.json` + `dataMeta.ts`, then reloads.
-2. **Excel fallback:** `python extract_json.py` from repo root.
-
-Then commit and push to deploy updated data to Vercel.
+1. **Sync & deploy** (header, localhost): syncs sheet → git push → Vercel deploy
+2. **CLI:** `npm run sync:push` from repo root
+3. **Excel fallback:** `python extract_json.py` then `npm run sync:push`

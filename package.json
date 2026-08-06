@@ -1,0 +1,9 @@
+{
+  "name": "loan-ops",
+  "private": true,
+  "scripts": {
+    "vercel-build": "npm run build --prefix web",
+    "build": "npm run build --prefix web",
+    "sync:push": "npm run sync:push --prefix web"
+  }
+}
