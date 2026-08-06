@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "Loan Operations | upGrad School of Technology",
   description:
     "Executive loan operations dashboard for uGSOT — pipeline, vendors, risk, and student intelligence.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
+  },
 };
 
 export const viewport: Viewport = {

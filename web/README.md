@@ -22,6 +22,28 @@ The repo root includes `vercel.json` so GitHub deploys build from the `web/` fol
 
 Or set **Root Directory = `web`** in Vercel project settings (either approach works).
 
+## Production security (required)
+
+Add these **Vercel → Project → Environment Variables** (Production only):
+
+| Variable | Purpose |
+|----------|---------|
+| `SITE_PASSWORD` | Team password for dashboard access |
+| `AUTH_SECRET` | Random secret for signed session cookie (min 32 chars). Generate: `openssl rand -base64 32` |
+
+With both set, production requires sign-in at `/login`. Sessions use **httpOnly, Secure, SameSite=strict** cookies (not plain text in the browser).
+
+**Also enabled automatically:**
+- All `/api/*` routes **disabled in production** (404) except `/api/auth/login`
+- Removed live `/api/students` endpoint (no sheet data API to exploit)
+- Security headers (CSP, HSTS, X-Frame-Options, nosniff)
+- `robots.txt` + `noindex` — blocks search engine indexing
+- Bot/scraper user-agent blocking
+
+**Local dev** is unchanged — no password, Sync & deploy still works.
+
+> **Note:** Student data is bundled for the dashboard UI. The password gate stops public access and casual scraping; only share the password with authorized team members.
+
 ## Refresh data
 
 **Option A — Sync & deploy (localhost, one click)**

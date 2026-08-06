@@ -3,10 +3,7 @@ import { syncFromGoogleSheet } from "@/lib/syncDataFiles";
 
 export async function POST() {
   if (process.env.NODE_ENV !== "development") {
-    return NextResponse.json(
-      { ok: false, message: "Sync is only available in local development." },
-      { status: 403 },
-    );
+    return new NextResponse(null, { status: 404 });
   }
 
   const result = await syncFromGoogleSheet();
