@@ -8,7 +8,8 @@ export type FetchCsvResult =
 export async function fetchSheetCsv(): Promise<FetchCsvResult> {
   const sheetId = process.env.GOOGLE_SHEET_ID || DEFAULT_SHEET_ID;
   const tab = process.env.SHEET_TAB_NAME || DEFAULT_TAB;
-  const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tab)}`;
+  // gviz CSV truncates large sheets; use the full export endpoint instead.
+  const url = `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=csv&sheet=${encodeURIComponent(tab)}`;
 
   try {
     const res = await fetch(url, { cache: "no-store" });

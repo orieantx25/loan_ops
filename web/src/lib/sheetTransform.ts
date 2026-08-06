@@ -1,6 +1,6 @@
 import type { RawStudent } from "./types";
 
-export const MIN_STUDENT_ROWS = 50;
+export const MIN_STUDENT_ROWS = 100;
 export const MIN_NEED_LOAN_YES = 20;
 export const MAX_ROW_DROP_RATIO = 0.5;
 

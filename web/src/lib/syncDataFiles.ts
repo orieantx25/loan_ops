@@ -2,6 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { fetchSheetCsv } from "./fetchSheetCsv";
 import { parseCsvToRows } from "./parseCsv";
+import type { RawStudent } from "./types";
 import {
   countNeedLoanYes,
   headersFromRow,
@@ -18,6 +19,17 @@ export type SyncResult =
       asOf: string;
     }
   | { ok: false; message: string };
+
+async function readExistingStudentCount(): Promise<number | undefined> {
+  try {
+    const p = path.join(process.cwd(), "src", "data", "students.json");
+    const raw = await fs.readFile(p, "utf-8");
+    const students = JSON.parse(raw) as RawStudent[];
+    return students.length > 0 ? students.length : undefined;
+  } catch {
+    return undefined;
+  }
+}
 
 export async function syncFromGoogleSheet(): Promise<SyncResult> {
   const fetched = await fetchSheetCsv();
@@ -38,7 +50,8 @@ export async function syncFromGoogleSheet(): Promise<SyncResult> {
   }
 
   const students = transformSheetRows(values);
-  const validation = validateStudentSnapshot(students);
+  const previousCount = await readExistingStudentCount();
+  const validation = validateStudentSnapshot(students, previousCount);
   if (!validation.ok) {
     return { ok: false, message: validation.message };
   }
