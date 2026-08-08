@@ -23,6 +23,7 @@ import { StudentTable } from "./StudentTable";
 import { StudentDrawer } from "./StudentDrawer";
 import { SectionNav } from "./SectionNav";
 import { DevSyncButton } from "./DevSyncButton";
+import { PortalReturnButton } from "./PortalReturnButton";
 import { MobileDashboard } from "./mobile/MobileDashboard";
 
 export function Dashboard({ raw }: { raw: RawStudent[] }) {
@@ -88,6 +89,7 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
             </div>
           </div>
           <div className="flex gap-4 sm:gap-5 text-right shrink-0 items-center">
+            <PortalReturnButton />
             <DevSyncButton />
             <Meta label="Cycle" value={DATA_CYCLE} />
             <Meta label="As of" value={asOf.date} sub={asOf.time} />

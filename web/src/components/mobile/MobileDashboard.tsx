@@ -6,6 +6,7 @@ import { DATA_CYCLE, formatAsOfParts } from "@/lib/dataMeta";
 import type { DashboardFilters, Student } from "@/lib/types";
 import { DataSheetPanels } from "../DataSheetPanels";
 import { DevSyncButton } from "../DevSyncButton";
+import { PortalReturnButton } from "../PortalReturnButton";
 import { Funnel } from "../Funnel";
 import { HBarList } from "../HBarList";
 import { OverlapMatrix } from "../OverlapMatrix";
@@ -79,19 +80,22 @@ export function MobileDashboard({
             />
             <h1 className="mobile-header-title">Loan Operations</h1>
           </div>
-          <button
-            type="button"
-            onClick={() => setFiltersOpen(true)}
-            className="mobile-header-filter-btn"
-            aria-label="Open filters"
-          >
-            <span aria-hidden>⚙</span>
-            {activeFilterCount > 0 ? (
-              <span className="mobile-header-filter-badge">
-                {activeFilterCount}
-              </span>
-            ) : null}
-          </button>
+          <div className="mobile-header-actions">
+            <PortalReturnButton variant="mobile" />
+            <button
+              type="button"
+              onClick={() => setFiltersOpen(true)}
+              className="mobile-header-filter-btn"
+              aria-label="Open filters"
+            >
+              <span aria-hidden>⚙</span>
+              {activeFilterCount > 0 ? (
+                <span className="mobile-header-filter-badge">
+                  {activeFilterCount}
+                </span>
+              ) : null}
+            </button>
+          </div>
         </div>
 
         <div className="mobile-header-meta">
