@@ -56,7 +56,7 @@ export function DevSyncButton() {
   };
 
   return (
-    <div className="flex flex-col items-end gap-1">
+    <div className="dev-sync-wrap flex flex-col items-end gap-1">
       <div className="flex gap-1.5">
         <button
           type="button"

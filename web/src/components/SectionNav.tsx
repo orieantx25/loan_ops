@@ -12,7 +12,11 @@ const SECTIONS = [
   { id: "students", label: "Students" },
 ] as const;
 
-export function SectionNav() {
+type SectionNavProps = {
+  variant?: "light" | "dark";
+};
+
+export function SectionNav({ variant = "light" }: SectionNavProps) {
   const [active, setActive] = useState<string>("summary");
 
   useEffect(() => {
@@ -43,16 +47,18 @@ export function SectionNav() {
 
   return (
     <nav className="py-0" aria-label="Dashboard sections">
-      <div className="flex gap-1 overflow-x-auto">
+      <div className="flex gap-1.5 overflow-x-auto pb-0.5 -mx-0.5 px-0.5 scrollbar-none">
         {SECTIONS.map((s) => (
           <button
             key={s.id}
             type="button"
             onClick={() => jump(s.id)}
-            className={`shrink-0 px-2.5 py-1 rounded-full text-[0.75rem] font-semibold border transition ${
+            className={`shrink-0 px-2.5 py-1 rounded-full text-[0.72rem] font-semibold border transition ${
               active === s.id
                 ? "bg-sot-red text-white border-sot-red"
-                : "bg-white text-sot-black border-sot-border hover:border-[#ccc]"
+                : variant === "dark"
+                  ? "bg-white/10 text-white/90 border-white/20 hover:bg-white/15"
+                  : "bg-white text-sot-black border-sot-border hover:border-[#ccc]"
             }`}
           >
             {s.label}

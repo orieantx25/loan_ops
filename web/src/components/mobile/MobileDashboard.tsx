@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { Analytics } from "@/lib/analytics";
-import { DATA_CYCLE, formatAsOfDisplay } from "@/lib/dataMeta";
+import { DATA_CYCLE, formatAsOfParts } from "@/lib/dataMeta";
 import type { DashboardFilters, Student } from "@/lib/types";
 import { DataSheetPanels } from "../DataSheetPanels";
 import { DevSyncButton } from "../DevSyncButton";
@@ -64,58 +64,67 @@ export function MobileDashboard({
     return n;
   }, [filters]);
 
+  const asOf = formatAsOfParts();
+
   return (
     <div className="mobile-shell min-h-screen bg-sot-bg flex flex-col">
       <header className="mobile-header shrink-0">
-        <div className="flex items-center justify-between gap-2 px-4 py-3">
-          <div className="flex items-center gap-2 min-w-0">
+        <div className="mobile-header-top">
+          <div className="mobile-header-brand">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/ugsot-logo.png"
               alt="uGSOT"
-              className="h-8 w-auto object-contain"
+              className="mobile-header-logo"
             />
-            <div className="min-w-0">
-              <div className="font-display font-bold text-sm leading-tight">
-                Loan Operations
-              </div>
-              <div className="text-[0.65rem] text-white/55 truncate">
-                {DATA_CYCLE} · {formatAsOfDisplay()} · {a.total} records
-              </div>
-            </div>
+            <h1 className="mobile-header-title">Loan Operations</h1>
           </div>
-          <div className="flex items-center gap-2 shrink-0">
-            <DevSyncButton />
-            <button
-              type="button"
-              onClick={() => setFiltersOpen(true)}
-              className="relative h-9 w-9 rounded-full bg-white/10 flex items-center justify-center text-sm"
-              aria-label="Open filters"
-            >
-              ⚙
-              {activeFilterCount > 0 ? (
-                <span className="absolute -top-0.5 -right-0.5 h-4 w-4 rounded-full bg-sot-red text-[0.6rem] font-bold text-white flex items-center justify-center">
-                  {activeFilterCount}
-                </span>
-              ) : null}
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => setFiltersOpen(true)}
+            className="mobile-header-filter-btn"
+            aria-label="Open filters"
+          >
+            <span aria-hidden>⚙</span>
+            {activeFilterCount > 0 ? (
+              <span className="mobile-header-filter-badge">
+                {activeFilterCount}
+              </span>
+            ) : null}
+          </button>
         </div>
+
+        <div className="mobile-header-meta">
+          <span className="mobile-header-meta-item">{DATA_CYCLE}</span>
+          <span className="mobile-header-meta-item">
+            As of {asOf.date}
+            {asOf.time ? ` · ${asOf.time}` : ""}
+          </span>
+          <span className="mobile-header-meta-item">{a.total} records</span>
+        </div>
+
         {activeFilterCount > 0 ? (
-          <div className="px-4 pb-2 text-[0.72rem] text-white/70">
+          <div className="mobile-header-filters">
             {filtered.length} in view ·{" "}
             <button type="button" className="underline" onClick={reset}>
               clear filters
             </button>
           </div>
         ) : null}
-        <div className="px-4 pb-2 sticky top-0 z-20 bg-sot-black">
-          <SectionNav />
+
+        {process.env.NODE_ENV === "development" ? (
+          <div className="mobile-header-sync">
+            <DevSyncButton />
+          </div>
+        ) : null}
+
+        <div className="mobile-header-nav">
+          <SectionNav variant="dark" />
         </div>
       </header>
 
       <main className="flex-1 overflow-y-auto px-4 py-4 mobile-main-scroll space-y-6">
-        <section id="summary" className="scroll-mt-36 space-y-4">
+        <section id="summary" className="scroll-mt-48 space-y-4">
           <div className="space-y-2">
             <SectionLabel>Initial Input (By SST)</SectionLabel>
             <div className="grid grid-cols-2 gap-2">
@@ -234,7 +243,7 @@ export function MobileDashboard({
           ) : null}
         </section>
 
-        <section id="vendors" className="scroll-mt-36 space-y-3">
+        <section id="vendors" className="scroll-mt-48 space-y-3">
           <SectionLabel>Vendors</SectionLabel>
           <MobileVendorList stats={a.vendorStats} />
           <HBarList
@@ -261,7 +270,7 @@ export function MobileDashboard({
           </div>
         </section>
 
-        <section id="intake" className="scroll-mt-36 space-y-3">
+        <section id="intake" className="scroll-mt-48 space-y-3">
           <SectionLabel>Intake</SectionLabel>
           <DataSheetPanels
             initialInputSst={a.dataSheet.initialInputSst}
@@ -273,12 +282,12 @@ export function MobileDashboard({
           />
         </section>
 
-        <section id="campus" className="scroll-mt-36 space-y-3">
+        <section id="campus" className="scroll-mt-48 space-y-3">
           <SectionLabel>Campus</SectionLabel>
           <MobileCampusCards rows={a.campuses} />
         </section>
 
-        <section id="pipeline" className="scroll-mt-36 space-y-3">
+        <section id="pipeline" className="scroll-mt-48 space-y-3">
           <SectionLabel>Pipeline</SectionLabel>
           <Funnel rows={a.funnel} />
           <HBarList
@@ -292,7 +301,7 @@ export function MobileDashboard({
           />
         </section>
 
-        <section id="risk" className="scroll-mt-36 space-y-3">
+        <section id="risk" className="scroll-mt-48 space-y-3">
           <SectionLabel>Risk</SectionLabel>
           <HBarList
             title="Risk Dashboard"
@@ -311,7 +320,7 @@ export function MobileDashboard({
           />
         </section>
 
-        <section id="students" className="scroll-mt-36 space-y-3 pb-8">
+        <section id="students" className="scroll-mt-48 space-y-3 pb-8">
           <SectionLabel>Students</SectionLabel>
           <StudentTable
             title="Top Pending Students"
