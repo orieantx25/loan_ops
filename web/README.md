@@ -26,7 +26,29 @@ Or set **Root Directory = `web`** in Vercel project settings (either approach wo
 
 Headers, bot blocking, API lockdown, and `noindex` are active in production.
 
-**Password login is on hold** — the site is open without sign-in. To enable later, set `SITE_PASSWORD` and `AUTH_SECRET` on Vercel and uncomment the check in `src/lib/auth.ts`.
+### Portal handoff auth (required in production)
+
+Direct visits to loan-ops are blocked unless the user has a valid session from the reports portal.
+
+| Variable | Required | Purpose |
+|----------|----------|---------|
+| `PORTAL_AUTH_SECRET` | Yes (Production) | Shared HMAC secret — must match the reports portal |
+| `PORTAL_LOGIN_URL` | Yes (Production) | Portal login URL, e.g. `https://your-portal.vercel.app/login` |
+
+**Flow:** Portal sign-in → **Loan Operations** → `GET /auth/handoff?token=…` → `loan_ops_session` cookie (30 days) → dashboard.
+
+Unauthenticated requests redirect to `PORTAL_LOGIN_URL?return=loans`. Production is **fail closed** — if `PORTAL_AUTH_SECRET` is missing, no dashboard data is shown.
+
+**Local dev** stays open unless you set `PORTAL_AUTH_SECRET` in `web/.env.local`.
+
+**Local handoff test**
+
+1. Same `PORTAL_AUTH_SECRET` in both apps' `.env.local`
+2. Portal: `NEXT_PUBLIC_LOAN_OPS_URL=http://localhost:3001`
+3. Loan-ops: `npm run dev -- -p 3001` (portal on 3000)
+4. Sign in on portal → Loan Operations → should land on loan-ops with session cookie
+
+Legacy password login (`SITE_PASSWORD` / `AUTH_SECRET`) remains disabled in `src/lib/auth.ts`.
 
 ## Refresh data
 

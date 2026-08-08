@@ -1,10 +1,23 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { SESSION_COOKIE, isAuthEnabled, verifySessionToken } from "@/lib/auth";
+import {
+  LOAN_OPS_SESSION_COOKIE,
+  getPortalLoginUrl,
+  hasPortalSecret,
+  isPortalAuthEnabled,
+  verifyLoanOpsSessionToken,
+} from "@/lib/portal-auth";
 
 const BLOCKED_BOTS =
   /bot|crawl|spider|scrape|curl|wget|python-requests|httpx|scrapy|headless|phantom|selenium|puppeteer|playwright|bytespider|ahrefs|semrush|petalbot/i;
 
-const PUBLIC_PATHS = ["/login", "/api/auth/login", "/robots.txt", "/favicon.ico"];
+const PUBLIC_PATHS = [
+  "/login",
+  "/api/auth/login",
+  "/auth/handoff",
+  "/robots.txt",
+  "/favicon.ico",
+];
 
 function isPublicAsset(pathname: string): boolean {
   if (pathname.startsWith("/_next/")) return true;
@@ -45,14 +58,29 @@ function securityHeaders(response: NextResponse): NextResponse {
   return response;
 }
 
+function redirectToPortalLogin(
+  request: NextRequest,
+  extra?: Record<string, string>,
+): NextResponse {
+  const dest = new URL(getPortalLoginUrl());
+  dest.searchParams.set("return", "loans");
+  dest.searchParams.set("from", request.nextUrl.pathname);
+  if (extra) {
+    for (const [k, v] of Object.entries(extra)) {
+      dest.searchParams.set(k, v);
+    }
+  }
+  return securityHeaders(NextResponse.redirect(dest));
+}
+
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const isProd = process.env.NODE_ENV === "production";
 
+  // Keep sync/admin APIs off the public production surface.
+  // Portal handoff lives at /auth/handoff (not under /api).
   if (isProd && pathname.startsWith("/api/")) {
-    return securityHeaders(
-      new NextResponse("Not Found", { status: 404 }),
-    );
+    return securityHeaders(new NextResponse("Not Found", { status: 404 }));
   }
 
   if (isProd && !isPublicAsset(pathname)) {
@@ -62,6 +90,37 @@ export async function middleware(request: NextRequest) {
     }
   }
 
+  // Portal SSO — always enforced in production (fail closed)
+  if (isPortalAuthEnabled() && !isPublicAsset(pathname)) {
+    if (!hasPortalSecret()) {
+      if (pathname.startsWith("/api/")) {
+        return securityHeaders(
+          new NextResponse(JSON.stringify({ error: "Service misconfigured" }), {
+            status: 503,
+            headers: { "Content-Type": "application/json" },
+          }),
+        );
+      }
+      return redirectToPortalLogin(request, { error: "misconfigured" });
+    }
+
+    const portalToken = request.cookies.get(LOAN_OPS_SESSION_COOKIE)?.value;
+    const portalSession = await verifyLoanOpsSessionToken(portalToken);
+    if (!portalSession) {
+      if (pathname.startsWith("/api/")) {
+        return securityHeaders(
+          new NextResponse(JSON.stringify({ error: "Unauthorized" }), {
+            status: 401,
+            headers: { "Content-Type": "application/json" },
+          }),
+        );
+      }
+      return redirectToPortalLogin(request);
+    }
+    return securityHeaders(NextResponse.next());
+  }
+
+  // Legacy password gate (optional / currently disabled via isAuthEnabled)
   if (isAuthEnabled() && !isPublicAsset(pathname)) {
     const token = request.cookies.get(SESSION_COOKIE)?.value;
     const valid = await verifySessionToken(
