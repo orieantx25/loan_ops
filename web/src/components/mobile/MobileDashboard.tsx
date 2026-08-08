@@ -81,7 +81,6 @@ export function MobileDashboard({
             <h1 className="mobile-header-title">Loan Operations</h1>
           </div>
           <div className="mobile-header-actions">
-            <PortalReturnButton variant="mobile" />
             <button
               type="button"
               onClick={() => setFiltersOpen(true)}
@@ -105,6 +104,7 @@ export function MobileDashboard({
             {asOf.time ? ` · ${asOf.time}` : ""}
           </span>
           <span className="mobile-header-meta-item">{a.total} records</span>
+          <PortalReturnButton variant="mobile" />
         </div>
 
         {activeFilterCount > 0 ? (

@@ -89,11 +89,11 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
             </div>
           </div>
           <div className="flex gap-4 sm:gap-5 text-right shrink-0 items-center">
-            <PortalReturnButton />
             <DevSyncButton />
             <Meta label="Cycle" value={DATA_CYCLE} />
             <Meta label="As of" value={asOf.date} sub={asOf.time} />
             <Meta label="Records" value={String(a.total)} />
+            <PortalReturnButton />
           </div>
         </div>
       </header>

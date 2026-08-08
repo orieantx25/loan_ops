@@ -1,30 +1,73 @@
 const PORTAL_HOME_URL =
-  process.env.NEXT_PUBLIC_PORTAL_URL?.trim() || "https://report.ugsot.com";
+  process.env.NEXT_PUBLIC_PORTAL_URL?.trim() || "https://reports.ugsot.com/";
+
+function ReportHubIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      aria-hidden
+      className="shrink-0 opacity-70"
+    >
+      <rect
+        x="1.5"
+        y="1.5"
+        width="5"
+        height="5"
+        rx="0.75"
+        stroke="currentColor"
+        strokeWidth="1.25"
+      />
+      <rect
+        x="9.5"
+        y="1.5"
+        width="5"
+        height="5"
+        rx="0.75"
+        stroke="currentColor"
+        strokeWidth="1.25"
+      />
+      <rect
+        x="1.5"
+        y="9.5"
+        width="5"
+        height="5"
+        rx="0.75"
+        stroke="currentColor"
+        strokeWidth="1.25"
+      />
+      <rect
+        x="9.5"
+        y="9.5"
+        width="5"
+        height="5"
+        rx="0.75"
+        stroke="currentColor"
+        strokeWidth="1.25"
+      />
+    </svg>
+  );
+}
 
 type Props = {
   variant?: "desktop" | "mobile";
 };
 
 export function PortalReturnButton({ variant = "desktop" }: Props) {
-  if (variant === "mobile") {
-    return (
-      <a
-        href={PORTAL_HOME_URL}
-        className="mobile-header-portal-btn"
-        aria-label="Return to Report hub"
-      >
-        Report hub
-      </a>
-    );
-  }
-
   return (
     <a
       href={PORTAL_HOME_URL}
-      className="inline-flex items-center gap-1.5 rounded-lg border border-white/20 bg-white/8 px-2.5 py-1.5 text-[0.72rem] font-semibold text-white/90 hover:bg-white/12 transition"
-      aria-label="Return to Report hub"
+      className={
+        variant === "mobile"
+          ? "report-hub-link report-hub-link-mobile"
+          : "report-hub-link report-hub-link-desktop"
+      }
+      aria-label="Return to report hub"
     >
-      Report hub
+      <ReportHubIcon />
+      <span>Return to report hub</span>
     </a>
   );
 }

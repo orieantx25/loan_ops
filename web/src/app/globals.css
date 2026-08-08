@@ -256,33 +256,42 @@ h3,
   flex-shrink: 0;
 }
 
-.mobile-header-portal-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.25rem;
-  padding: 0 0.65rem;
-  border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 0.68rem;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.mobile-header-portal-btn:hover {
-  background: rgba(255, 255, 255, 0.14);
-}
-
 .mobile-header-brand {
   display: flex;
   align-items: center;
   gap: 0.625rem;
   min-width: 0;
   flex: 1;
+}
+
+.report-hub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.report-hub-link:hover {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.report-hub-link-desktop {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  padding-left: 1rem;
+  margin-left: 0.25rem;
+}
+
+.report-hub-link-mobile {
+  align-self: center;
+  font-size: 0.72rem;
+  margin-left: auto;
 }
 
 .mobile-header-logo {
@@ -339,6 +348,7 @@ h3,
 .mobile-header-meta {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.35rem 0.5rem;
   padding: 0 1rem 0.625rem;
 }
