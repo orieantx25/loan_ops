@@ -33,7 +33,8 @@ Direct visits to loan-ops are blocked unless the user has a valid session from t
 | Variable | Required | Purpose |
 |----------|----------|---------|
 | `PORTAL_AUTH_SECRET` | Yes (Production) | Shared HMAC secret — must match the reports portal |
-| `PORTAL_LOGIN_URL` | Yes (Production) | Portal login URL, e.g. `https://your-portal.vercel.app/login` |
+| `PORTAL_LOGIN_URL` | Yes (Production) | Portal login URL, e.g. `https://reports.ugsot.com/login` |
+| `NEXT_PUBLIC_PORTAL_URL` | Optional | Report hub link target (default `https://reports.ugsot.com/`) |
 
 **Flow:** Portal sign-in → **Loan Operations** → `GET /auth/handoff?token=…` → `loan_ops_session` cookie (30 days) → dashboard.
 

@@ -1,5 +1,4 @@
-const PORTAL_HOME_URL =
-  process.env.NEXT_PUBLIC_PORTAL_URL?.trim() || "https://reports.ugsot.com/";
+import { PORTAL_HOME_URL } from "@/lib/portalUrl";
 
 function ReportHubIcon() {
   return (

@@ -7,9 +7,8 @@ import {
   computeAnalytics,
   enrichStudents,
 } from "@/lib/analytics";
-import { DATA_CYCLE, formatAsOfParts } from "@/lib/dataMeta";
-import type { DashboardFilters, RawStudent, Student } from "@/lib/types";
 import { DEFAULT_FILTERS } from "@/lib/types";
+import type { DashboardFilters, RawStudent, Student } from "@/lib/types";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { Filters } from "./Filters";
 import { KpiCard } from "./KpiCard";
@@ -22,8 +21,7 @@ import { HBarList } from "./HBarList";
 import { StudentTable } from "./StudentTable";
 import { StudentDrawer } from "./StudentDrawer";
 import { SectionNav } from "./SectionNav";
-import { DevSyncButton } from "./DevSyncButton";
-import { PortalReturnButton } from "./PortalReturnButton";
+import { DashboardHeader } from "./DashboardHeader";
 import { MobileDashboard } from "./mobile/MobileDashboard";
 
 export function Dashboard({ raw }: { raw: RawStudent[] }) {
@@ -54,8 +52,6 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
 
   const reset = () => setFilters({ ...DEFAULT_FILTERS });
 
-  const asOf = formatAsOfParts();
-
   if (isMobile) {
     return (
       <MobileDashboard
@@ -71,32 +67,7 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
 
   return (
     <div className="min-h-screen bg-sot-bg">
-      <header className="bg-sot-black text-white">
-        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-3 min-w-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/ugsot-logo.png"
-              alt="upGrad School of Technology"
-              width={220}
-              height={68}
-              className="h-10 sm:h-11 w-auto max-w-[240px] object-contain object-left shrink-0"
-            />
-            <div className="hidden sm:block border-l border-white/15 pl-3 min-w-0">
-              <h1 className="font-display text-base font-bold tracking-tight leading-none">
-                Loan Operations
-              </h1>
-            </div>
-          </div>
-          <div className="flex gap-4 sm:gap-5 text-right shrink-0 items-center">
-            <DevSyncButton />
-            <Meta label="Cycle" value={DATA_CYCLE} />
-            <Meta label="As of" value={asOf.date} sub={asOf.time} />
-            <Meta label="Records" value={String(a.total)} />
-            <PortalReturnButton />
-          </div>
-        </div>
-      </header>
+      <DashboardHeader recordCount={a.total} />
 
       <main className="mx-auto max-w-[1400px] px-4 sm:px-6 py-4 space-y-4">
         <Filters
@@ -403,28 +374,6 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
     <h2 className="section-label font-display text-sm font-bold text-sot-black">
       {children}
     </h2>
-  );
-}
-
-function Meta({
-  label,
-  value,
-  sub,
-}: {
-  label: string;
-  value: string;
-  sub?: string;
-}) {
-  return (
-    <div>
-      <div className="text-[0.58rem] uppercase tracking-wider text-white/40 leading-none">
-        {label}
-      </div>
-      <div className="font-semibold text-[0.8rem] mt-0.5 leading-tight">{value}</div>
-      {sub ? (
-        <div className="text-[0.65rem] text-white/55 mt-0.5 tabular-nums">{sub}</div>
-      ) : null}
-    </div>
   );
 }
 
