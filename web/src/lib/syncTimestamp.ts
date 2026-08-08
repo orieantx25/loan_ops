@@ -1,2 +1,2 @@
 /** ISO timestamp of last sheet sync — updated by Sync sheet / extract. */
-export const DATA_SYNCED_AT = "2026-08-07T09:57:22.913Z";
+export const DATA_SYNCED_AT = "2026-08-08T05:40:16.045Z";
