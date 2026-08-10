@@ -14,6 +14,9 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  turbopack: {
+    root: process.cwd(),
+  },
   async headers() {
     return [
       {

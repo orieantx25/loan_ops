@@ -28,7 +28,10 @@ function isPublicAsset(pathname: string): boolean {
   );
 }
 
-function securityHeaders(response: NextResponse): NextResponse {
+function securityHeaders(
+  response: NextResponse,
+  isProd = process.env.NODE_ENV === "production",
+): NextResponse {
   response.headers.set("X-Frame-Options", "DENY");
   response.headers.set("X-Content-Type-Options", "nosniff");
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
@@ -37,15 +40,20 @@ function securityHeaders(response: NextResponse): NextResponse {
     "camera=(), microphone=(), geolocation=(), interest-cohort=()",
   );
   response.headers.set("X-Robots-Tag", "noindex, nofollow, noarchive");
-  response.headers.set(
-    "Strict-Transport-Security",
-    "max-age=63072000; includeSubDomains; preload",
-  );
+  if (isProd) {
+    response.headers.set(
+      "Strict-Transport-Security",
+      "max-age=63072000; includeSubDomains; preload",
+    );
+  }
+  const scriptSrc = isProd
+    ? "script-src 'self' 'unsafe-inline'"
+    : "script-src 'self' 'unsafe-inline' 'unsafe-eval'";
   response.headers.set(
     "Content-Security-Policy",
     [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline'",
+      scriptSrc,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data:",
       "font-src 'self' data:",
@@ -113,11 +121,12 @@ export async function middleware(request: NextRequest) {
             status: 401,
             headers: { "Content-Type": "application/json" },
           }),
+          isProd,
         );
       }
       return redirectToPortalLogin(request);
     }
-    return securityHeaders(NextResponse.next());
+    return securityHeaders(NextResponse.next(), isProd);
   }
 
   // Legacy password gate (optional / currently disabled via isAuthEnabled)
@@ -134,15 +143,16 @@ export async function middleware(request: NextRequest) {
             status: 401,
             headers: { "Content-Type": "application/json" },
           }),
+          isProd,
         );
       }
       const login = new URL("/login", request.url);
       login.searchParams.set("from", pathname);
-      return securityHeaders(NextResponse.redirect(login));
+      return securityHeaders(NextResponse.redirect(login), isProd);
     }
   }
 
-  return securityHeaders(NextResponse.next());
+  return securityHeaders(NextResponse.next(), isProd);
 }
 
 export const config = {
