@@ -22,6 +22,32 @@ The repo root includes `vercel.json` so GitHub deploys build from the `web/` fol
 
 Or set **Root Directory = `web`** in Vercel project settings (either approach works).
 
+### Hobby plan + private repo (deploy blocked fix)
+
+On Vercel **Hobby**, only the **team owner** can deploy from Git pushes on a **private** repo. Other contributors (or mismatched GitHub/Vercel accounts) see:
+
+> *Deployment blocked — commit author did not have contributing access*
+
+**You do not need Pro.** Use a **Deploy Hook** instead:
+
+1. **Vercel team owner** → **loan-ops** → **Settings → Git → Deploy Hooks** → Create hook for branch `main`
+2. Copy the hook URL
+3. **GitHub** → **orieantx25/loan_ops** → **Settings → Secrets and variables → Actions** → New secret:
+   - Name: `VERCEL_DEPLOY_HOOK_URL`
+   - Value: the hook URL
+4. Push to `main` — GitHub Actions (`.github/workflows/vercel-deploy-hook.yml`) POSTs to the hook and Vercel deploys
+
+**Optional:** Vercel → **Settings → Git → Ignored Build Step** → set to `exit 0` to skip the blocked auto-deploy on each push (hook still deploys).
+
+**Manual fallback:** Vercel team owner → **Deployments** → **Redeploy** on the latest commit.
+
+**Git author for commits** (matches Aug 8 working deploy):
+
+```bash
+git config --local user.email "103372890+orieantx25@users.noreply.github.com"
+git config --local user.name "Faiyaz"
+```
+
 ## Production security
 
 Headers, bot blocking, API lockdown, and `noindex` are active in production.
