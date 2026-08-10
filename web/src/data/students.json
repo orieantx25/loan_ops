@@ -324,7 +324,7 @@
     "tentativeDate": null,
     "loanStage": "Ongoing",
     "loanStatus": "Processing by Icici, Processing by GyanDhan",
-    "needFldg": "No",
+    "needFldg": "Yes",
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
     "reasonNotStarted": null
@@ -2004,7 +2004,7 @@
     "tentativeDate": null,
     "loanStage": "Not required",
     "loanStatus": null,
-    "needFldg": "Yes",
+    "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
     "reasonNotStarted": null
@@ -2064,7 +2064,7 @@
     "tentativeDate": null,
     "loanStage": "Ongoing",
     "loanStatus": "Processing by PM vidyalakshmi",
-    "needFldg": "Yes",
+    "needFldg": "No",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
     "reasonNotStarted": null
@@ -2304,7 +2304,7 @@
     "tentativeDate": null,
     "loanStage": "Ongoing",
     "loanStatus": "Processing by Icici, Processing by GyanDhan",
-    "needFldg": "Yes",
+    "needFldg": "No",
     "needVishwa": null,
     "needVidyalakshmi": "Yes",
     "reasonNotStarted": null
@@ -2784,7 +2784,7 @@
     "tentativeDate": null,
     "loanStage": "Ongoing",
     "loanStatus": "Not eligbile for any loan",
-    "needFldg": null,
+    "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
     "reasonNotStarted": null
@@ -3024,7 +3024,7 @@
     "tentativeDate": null,
     "loanStage": "Ongoing",
     "loanStatus": "Processing by GyanDhan",
-    "needFldg": null,
+    "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
     "reasonNotStarted": null
@@ -10284,7 +10284,7 @@
     "tentativeDate": null,
     "loanStage": "Ongoing",
     "loanStatus": "Not eligbile for any loan, Processing by PM vidyalakshmi",
-    "needFldg": "Yes",
+    "needFldg": "No",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
     "reasonNotStarted": null
