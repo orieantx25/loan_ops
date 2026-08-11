@@ -8,8 +8,31 @@ const REQUIRED_HEADER_PARTS = [
   ["name"],
   ["loan required"],
   ["campus"],
-  ["loan stage"],
+  // "Loan Stage" was removed from Master data; Loan Status is required instead.
+  ["loan status"],
 ] as const;
+
+/** Coarse Loan Stage values used by analytics when the sheet column is gone. */
+function deriveLoanStageFromStatus(
+  loanStatus: string | null,
+  loanRequired: string | null,
+): string | null {
+  const W = (loanStatus ?? "").toLowerCase();
+  const H = (loanRequired ?? "").toLowerCase();
+  if (W.includes("disbursed")) return "Disbursed";
+  if (W.includes("sanctioned")) return "Loan Proccessed/Accepted";
+  if (W.includes("not eligbile") || W.includes("not eligible")) return "Rejected";
+  if (
+    W.includes("processing") ||
+    W.includes("docs pending") ||
+    W.includes("state scheme")
+  )
+    return "Ongoing";
+  if (H === "no") return "Not Required";
+  if (H === "yes") return "Not even started";
+  if (loanStatus) return "Ongoing";
+  return null;
+}
 
 function cleanKey(k: string): string {
   return k.replace(/\n/g, " ").trim();
@@ -132,7 +155,12 @@ export function transformSheetRows(values: unknown[][]): RawStudent[] {
       caseStatus: cellStr(getByPartial(keys, r, "Initial Case")),
       currentCaseStatus: cellStr(getByPartial(keys, r, "CurrentCase")),
       tentativeDate: cellStr(getByPartial(keys, r, "Tentative")),
-      loanStage: cellStr(getByPartial(keys, r, "Loan Stage")),
+      loanStage:
+        cellStr(getByPartial(keys, r, "Loan Stage")) ??
+        deriveLoanStageFromStatus(
+          cellStr(getByPartial(keys, r, "Loan Status")),
+          cellStr(getByPartial(keys, r, "Loan required")),
+        ),
       loanStatus: cellStr(getByPartial(keys, r, "Loan Status")),
       needFldg: cellStr(getByPartial(keys, r, "FLDG")),
       needVishwa: cellStr(getByPartial(keys, r, "Vishwa")),
