@@ -8,9 +8,12 @@ const REQUIRED_HEADER_PARTS = [
   ["name"],
   ["loan required"],
   ["campus"],
-  // "Loan Stage" was removed from Master data; Loan Status is required instead.
+  // Loan Stage was removed; Loan Status lives in column AI.
   ["loan status"],
 ] as const;
+
+/** 0-based index of Google Sheet column AI (A=0 … AI=34). */
+const LOAN_STATUS_COL_AI = 34;
 
 /** Coarse Loan Stage values used by analytics when the sheet column is gone. */
 function deriveLoanStageFromStatus(
@@ -86,6 +89,29 @@ function getExactish(
   return null;
 }
 
+/** Prefer header "Loan Status", else sheet column AI. */
+function getLoanStatus(
+  headers: string[],
+  keys: string[],
+  rec: Record<string, unknown>,
+  row: unknown[],
+): string | null {
+  const byExact = cellStr(getExactish(keys, rec, "Loan Status"));
+  if (byExact) return byExact;
+
+  const aiHeader = headers[LOAN_STATUS_COL_AI];
+  if (aiHeader && !aiHeader.startsWith("col_")) {
+    const byAiHeader = cellStr(rec[aiHeader]);
+    if (byAiHeader) return byAiHeader;
+  }
+
+  if (LOAN_STATUS_COL_AI < row.length) {
+    return cellStr(row[LOAN_STATUS_COL_AI]);
+  }
+
+  return cellStr(getByPartial(keys, rec, "Loan Status"));
+}
+
 export function headersFromRow(row: unknown[]): string[] {
   return row.map((h, j) =>
     h != null && String(h).trim() !== ""
@@ -158,10 +184,10 @@ export function transformSheetRows(values: unknown[][]): RawStudent[] {
       loanStage:
         cellStr(getByPartial(keys, r, "Loan Stage")) ??
         deriveLoanStageFromStatus(
-          cellStr(getByPartial(keys, r, "Loan Status")),
+          getLoanStatus(headers, keys, r, row),
           cellStr(getByPartial(keys, r, "Loan required")),
         ),
-      loanStatus: cellStr(getByPartial(keys, r, "Loan Status")),
+      loanStatus: getLoanStatus(headers, keys, r, row),
       needFldg: cellStr(getByPartial(keys, r, "FLDG")),
       needVishwa: cellStr(getByPartial(keys, r, "Vishwa")),
       needVidyalakshmi:
