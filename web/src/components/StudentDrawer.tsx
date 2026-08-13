@@ -59,6 +59,14 @@ export function StudentDrawer({
             <Row label="Loan stage (raw)" value={student.loanStage || "—"} />
             <Row label="Case status" value={student.caseStatus || "—"} />
             <Row
+              label="Sem fee paid"
+              value={student.semFeePaidRaw || "—"}
+            />
+            <Row
+              label="Sem fee campus"
+              value={student.semFeeCampus || "—"}
+            />
+            <Row
               label="Pending days"
               value={
                 student.pendingDays != null ? String(student.pendingDays) : "—"

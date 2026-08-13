@@ -9,6 +9,7 @@ type Row = {
   disbursed: number;
   rejected: number;
   riskCases: number;
+  semFeePaid: number;
 };
 
 export function CampusTable({ rows }: { rows: Row[] }) {
@@ -21,6 +22,7 @@ export function CampusTable({ rows }: { rows: Row[] }) {
       disbursed: acc.disbursed + r.disbursed,
       rejected: acc.rejected + r.rejected,
       riskCases: acc.riskCases + r.riskCases,
+      semFeePaid: acc.semFeePaid + r.semFeePaid,
     }),
     {
       total: 0,
@@ -30,6 +32,7 @@ export function CampusTable({ rows }: { rows: Row[] }) {
       disbursed: 0,
       rejected: 0,
       riskCases: 0,
+      semFeePaid: 0,
     },
   );
 
@@ -39,8 +42,8 @@ export function CampusTable({ rows }: { rows: Row[] }) {
     <div className="card card-pad overflow-x-auto">
       <div className="section-title mb-1">Campus bifurcation</div>
       <div className="text-[0.75rem] text-sot-black/65 mb-3">
-        Need Loan = Loan required (Latest) = Yes. Totals reconcile with funnel and
-        KPI cards.
+        Need Loan = Loan required (Latest) = Yes. Sem Fee Paid counts only{" "}
+        <strong>Yes</strong> and <strong>Yes - Under review</strong>.
       </div>
       <table className="table-sot">
         <thead>
@@ -48,6 +51,7 @@ export function CampusTable({ rows }: { rows: Row[] }) {
             <th className="sticky-col">Campus</th>
             <th>Total</th>
             <th>Need Loan</th>
+            <th>Sem Fee Paid</th>
             <th>Processing</th>
             <th>Sanctioned</th>
             <th>Disbursed</th>
@@ -74,6 +78,7 @@ export function CampusTable({ rows }: { rows: Row[] }) {
                 <td style={{ background: heatBg }} className="font-semibold">
                   {r.needLoan}
                 </td>
+                <td className="font-semibold">{r.semFeePaid}</td>
                 <td>{r.processing}</td>
                 <td>{r.sanctioned}</td>
                 <td>{r.disbursed}</td>
@@ -92,6 +97,7 @@ export function CampusTable({ rows }: { rows: Row[] }) {
             </td>
             <td className="font-bold">{totals.total}</td>
             <td className="font-bold text-sot-red">{totals.needLoan}</td>
+            <td className="font-bold">{totals.semFeePaid}</td>
             <td className="font-bold">{totals.processing}</td>
             <td className="font-bold">{totals.sanctioned}</td>
             <td className="font-bold">{totals.disbursed}</td>

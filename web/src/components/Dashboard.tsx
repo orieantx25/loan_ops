@@ -170,6 +170,45 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
             />
           </div>
 
+          <SectionLabel>Sem fee paid</SectionLabel>
+          <p className="text-[0.75rem] text-sot-black/65 -mt-1">
+            Counts only <strong>Yes</strong> and <strong>Yes - Under review</strong>{" "}
+            from sheet column AO. Excludes No and Yes - Loan not required.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="kpi-scroll flex md:grid md:grid-cols-3 gap-3 overflow-x-auto pb-1">
+              <KpiCard
+                label="Sem Fee Paid"
+                value={a.semFeePaidTotal}
+                hero
+                tone="green"
+                hint={
+                  a.total
+                    ? `${((a.semFeePaidTotal / a.total) * 100).toFixed(0)}% of students`
+                    : undefined
+                }
+              />
+              <KpiCard
+                label="Yes"
+                value={a.semFeePaidYes}
+                tone="green"
+              />
+              <KpiCard
+                label="Yes - Under review"
+                value={a.semFeePaidUnderReview}
+                tone="amber"
+              />
+            </div>
+            <HBarList
+              title="Sem Fee Paid by campus"
+              subtitle="Uses Sem Fee Campus (AP) when set"
+              items={a.semFeePaidByCampus.map((r) => ({
+                label: r.campus,
+                count: r.count,
+              }))}
+            />
+          </div>
+
           <SectionLabel>Attention needed</SectionLabel>
           <div className="kpi-scroll flex md:grid md:grid-cols-5 gap-3 overflow-x-auto pb-1">
             <KpiCard

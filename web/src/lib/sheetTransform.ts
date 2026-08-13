@@ -60,7 +60,7 @@ function rowToRecord(
   row: unknown[],
 ): Record<string, unknown> {
   const rec: Record<string, unknown> = {};
-  for (let j = 0; j < Math.min(headers.length, 43); j++) {
+  for (let j = 0; j < headers.length; j++) {
     rec[headers[j]] = j < row.length ? row[j] : null;
   }
   return rec;
@@ -194,6 +194,14 @@ export function transformSheetRows(values: unknown[][]): RawStudent[] {
         cellStr(getByPartial(keys, r, "Vidyalaksmi")) ??
         cellStr(getByPartial(keys, r, "Vidyalakshmi")),
       reasonNotStarted: cellStr(getByPartial(keys, r, "Reason if not")),
+      semFeePaid:
+        cellStr(getExactish(keys, r, "Sem Fee Paid")) ??
+        cellStr(getByPartial(keys, r, "Sem Fee Paid")) ??
+        (headers[40] ? cellStr(r[headers[40]]) : null),
+      semFeeCampus:
+        cellStr(getExactish(keys, r, "Sem Fee Campus")) ??
+        cellStr(getByPartial(keys, r, "Sem Fee Campus")) ??
+        (headers[41] ? cellStr(r[headers[41]]) : null),
     });
   }
 

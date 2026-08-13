@@ -27,6 +27,8 @@ export type RawStudent = {
   needVishwa: string | null;
   needVidyalakshmi: string | null;
   reasonNotStarted: string | null;
+  semFeePaid: string | null;
+  semFeeCampus: string | null;
 };
 
 export type CanonicalStage =
@@ -81,6 +83,12 @@ export type Student = {
   pendingDays: number | null;
   ageingBucket: string;
   comments: string;
+  /** Raw Sem Fee Paid cell (AO). */
+  semFeePaidRaw: string;
+  /** Counted as paid: Yes or Yes - Under review only. */
+  semFeePaid: boolean;
+  semFeeUnderReview: boolean;
+  semFeeCampus: string;
 };
 
 export type DashboardFilters = {

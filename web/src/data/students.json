@@ -12,7 +12,7 @@
     "annualIncome": 13,
     "incomeProof": "ITR",
     "sstRemarks": "Waiting for the bank to reach them out Need assitance from us",
-    "pranjalComments": "9/7/26: Requires loan of 25Lakhs, good cibil score, good income, please reach out to this student , bank hasn't called back yet\n18/7: Ongoing on with ICICI bank. \n28/7 : Student suggest that process has been completed from icici but they haven't reverted anything about this one\n30/7 : Student loan has been rejected by icici due to other bank.",
+    "pranjalComments": "9/7/26: Requires loan of 25Lakhs, good cibil score, good income, please reach out to this student , bank hasn't called back yet\n18/7: Ongoing on with ICICI bank. \n28/7 : Student suggest that process has been completed from icici but they haven't reverted anything about this one\n30/7 : Student loan has been rejected by icici due to other bank. \n8/8 : approved for 20L",
     "loanRequired": "Yes",
     "sharedIcici": "Yes",
     "sharedPropelld": "No",
@@ -27,7 +27,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 2,
@@ -57,7 +59,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 3,
@@ -87,7 +91,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 2,
@@ -117,7 +123,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 3,
@@ -132,7 +140,7 @@
     "annualIncome": 3,
     "incomeProof": "Income Certificate",
     "sstRemarks": "Propelled -24Lakh , Rate of intrest :11-12%, Going with Propelled",
-    "pranjalComments": "9/7/26 : Loan process has begun through propelld , they have offer 10L at 13%, he has some expectation of 10%, have spoken to student , student will make me talk to the father tomorrow. Father's number : 9359685429\n10/7/26 : Called father , DNP. Father called back : not at all happy with 13% ROI, he said it would be too much to pay. Father was outside, so he told he would call me by evening to discuss this . ICICI hasn't reached out to them \n21/7 : Pranjal : Have to be processed by GyanDhan. Student hasn't talked to any banks. \nYearly incomr : 5L, ITR filed : No, Profession : Travel agent , Rental income : 0, started with propelled but 14% interest is too much \n30/7: Approved",
+    "pranjalComments": "9/7/26 : Loan process has begun through propelld , they have offer 10L at 13%, he has some expectation of 10%, have spoken to student , student will make me talk to the father tomorrow. Father's number : 9359685429\n10/7/26 : Called father , DNP. Father called back : not at all happy with 13% ROI, he said it would be too much to pay. Father was outside, so he told he would call me by evening to discuss this . ICICI hasn't reached out to them \n21/7 : Pranjal : Have to be processed by GyanDhan. Student hasn't talked to any banks. \nYearly incomr : 5L, ITR filed : No, Profession : Travel agent , Rental income : 0, started with propelled but 14% interest is too much \n30/7: Approved and paid",
     "loanRequired": "Yes",
     "sharedIcici": "No",
     "sharedPropelld": "Yes",
@@ -147,7 +155,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 4,
@@ -177,7 +187,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 3,
@@ -207,7 +219,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 4,
@@ -237,7 +251,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 5,
@@ -267,7 +283,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 4,
@@ -297,7 +315,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 5,
@@ -327,7 +347,9 @@
     "needFldg": "Yes",
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 6,
@@ -357,7 +379,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 5,
@@ -372,7 +396,7 @@
     "annualIncome": 8,
     "incomeProof": "ITR",
     "sstRemarks": "Waiting for the bank to reach them out Need assitance from us",
-    "pranjalComments": "9/7/26 : Requires loan and have shared his details with ICICI and propeld both to speak. He is looking for the loan of 25L. Income is correct\n18/7: No revert from ICICI, have shared to more partners\n21/7 : ICICI told they'll update but they haven't got back. Annual income : 7L, Father : Teacher ( Government ) , Cibil : 750, ITR filed : Yes || Processing through gyan Dhan. Mother is a housewife, father pays 90% of the emi to the interest of his sister's education\n31/7: Docs submitted to GD\n1/8 : rejected by all due to high FOIR\n5/8 : Credilla in process.\n6/8 : Spoke with the father, he has submitted all the documents, waiting on the approval",
+    "pranjalComments": "9/7/26 : Requires loan and have shared his details with ICICI and propeld both to speak. He is looking for the loan of 25L. Income is correct\n18/7: No revert from ICICI, have shared to more partners\n21/7 : ICICI told they'll update but they haven't got back. Annual income : 7L, Father : Teacher ( Government ) , Cibil : 750, ITR filed : Yes || Processing through gyan Dhan. Mother is a housewife, father pays 90% of the emi to the interest of his sister's education\n31/7: Docs submitted to GD\n1/8 : rejected by all due to high FOIR\n5/8 : Credilla in process.\n6/8 : Spoke with the father, he has submitted all the documents, waiting on the approval\n12/8 : Loan disbursed by SBI, father sent the loan receipt",
     "loanRequired": "Yes",
     "sharedIcici": "Yes",
     "sharedPropelld": "Yes",
@@ -380,14 +404,16 @@
     "sharedPoonawala": null,
     "sharedGyandhan": null,
     "caseStatus": "Risk",
-    "currentCaseStatus": "Risk",
+    "currentCaseStatus": "Control",
     "tentativeDate": null,
-    "loanStage": "Ongoing",
+    "loanStage": "Disbursed",
     "loanStatus": "Processing by GyanDhan",
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 6,
@@ -417,7 +443,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 7,
@@ -447,7 +475,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 6,
@@ -462,7 +492,7 @@
     "annualIncome": 6.5,
     "incomeProof": "ITR",
     "sstRemarks": "Waiting for the bank to reach them out Need assitance from us",
-    "pranjalComments": "10/7 : HAs got the call from Study4buddy, student has filled the icici form, 6.5 Lacs is the father income, ITR filed , Father's profession : Shop ( Self employed ). Student is worried that he is not getting +ve response from HDFC , hasn't got the call from ICICI. Student has no collateral\n\n12/7 : Student called back, icici hasn;t called back. Student is worried about the loan. as study4buddy told he wont get the loan with this coaplicant. Shared to propelld again. \n\n14/7 : Piyush's case has been rejected by all lenders due to low income and poor academics. Also, the father already has an existing personal loan EMI, so the income eligibility criteria are not being met. He needs to provide a strong additional co-applicant to relook the case.\n21/7: Processing by propelld\n31/7: Logged in with ES, GD also approved\nmoving from risk to control",
+    "pranjalComments": "10/7 : HAs got the call from Study4buddy, student has filled the icici form, 6.5 Lacs is the father income, ITR filed , Father's profession : Shop ( Self employed ). Student is worried that he is not getting +ve response from HDFC , hasn't got the call from ICICI. Student has no collateral\n\n12/7 : Student called back, icici hasn;t called back. Student is worried about the loan. as study4buddy told he wont get the loan with this coaplicant. Shared to propelld again. \n\n14/7 : Piyush's case has been rejected by all lenders due to low income and poor academics. Also, the father already has an existing personal loan EMI, so the income eligibility criteria are not being met. He needs to provide a strong additional co-applicant to relook the case.\n21/7: Processing by propelld\n31/7: Logged in with ES, GD also approved\nmoving from risk to control \n7/8 : Pending because of contract singing between GD and UG",
     "loanRequired": "Yes",
     "sharedIcici": "No",
     "sharedPropelld": "Yes",
@@ -477,7 +507,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 7,
@@ -507,7 +539,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 8,
@@ -537,7 +571,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 7,
@@ -567,7 +603,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 8,
@@ -597,7 +635,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 9,
@@ -627,7 +667,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 10,
@@ -657,7 +699,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 8,
@@ -687,7 +731,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 9,
@@ -717,7 +763,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 10,
@@ -747,7 +795,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 9,
@@ -777,7 +827,9 @@
     "needFldg": "No",
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 10,
@@ -807,7 +859,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Were DNP until recently, and were not trying at personal level, have shared the leads."
+    "reasonNotStarted": "Were DNP until recently, and were not trying at personal level, have shared the leads.",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 11,
@@ -837,13 +891,15 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 10,
     "name": "Aryan Santosh Pagar",
     "mobile": 9403503971,
-    "provisionalId": "PROV1000001562",
+    "provisionalId": "PROV260608927",
     "campus": "ADYPU",
     "needLoanSst": "Yes",
     "criticality": "Non Critical",
@@ -867,7 +923,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 11,
@@ -897,7 +955,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 12,
@@ -927,7 +987,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 11,
@@ -957,7 +1019,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 12,
@@ -987,7 +1051,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 13,
@@ -1017,7 +1083,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 12,
@@ -1032,7 +1100,7 @@
     "annualIncome": 4.5,
     "incomeProof": "EWS",
     "sstRemarks": "Propelld contacted didn't like what was offered , waiting for more options",
-    "pranjalComments": "9/7/26 :Student has got offer from propelld of 15%, father's income : 45k/month , have sent to icici to talk. Loan amt : 28 Lacs. \n18/7: He didnt like the proposal from propelld since he could not explain properly, have shared his number with Gyan Dhan\n28/7 : Student has submitted all the documents to credilla, Field verification is pending \n\n31/7 : Student has got the placement report from adypu, arranged it and sent it ot him. he is taking loan from pnb",
+    "pranjalComments": "9/7/26 :Student has got offer from propelld of 15%, father's income : 45k/month , have sent to icici to talk. Loan amt : 28 Lacs. \n18/7: He didnt like the proposal from propelld since he could not explain properly, have shared his number with Gyan Dhan\n28/7 : Student has submitted all the documents to credilla, Field verification is pending \n\n31/7 : Student has got the placement report from adypu, arranged it and sent it ot him. he is taking loan from pnb.\n11/8 : credilla's legal report pending ( 5-6 days it should come)",
     "loanRequired": "Yes",
     "sharedIcici": "Yes",
     "sharedPropelld": "Yes",
@@ -1047,7 +1115,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 13,
@@ -1077,7 +1147,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 14,
@@ -1092,7 +1164,7 @@
     "annualIncome": 5,
     "incomeProof": "EWS",
     "sstRemarks": "Waiting for the bank to reach them out Need assitance from us",
-    "pranjalComments": "9/7/26 : Student requires the loan of 25 L. Father's income under 5L. Have shared the details to icici and propelld both \n16/7/26 : Waiting on the documents from students side ( PRopelld).\n21/7 : Propelld called, student still doesnt have PAN. Once the PAN comes he would proceed with it",
+    "pranjalComments": "9/7/26 : Student requires the loan of 25 L. Father's income under 5L. Have shared the details to icici and propelld both \n16/7/26 : Waiting on the documents from students side ( PRopelld).\n21/7 : Propelld called, student still doesnt have PAN. Once the PAN comes he would proceed with it \n12/8 : student has sent the documents to avance and credilla.",
     "loanRequired": "Yes",
     "sharedIcici": "Yes",
     "sharedPropelld": "Yes",
@@ -1107,7 +1179,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 13,
@@ -1137,7 +1211,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 14,
@@ -1167,7 +1243,9 @@
     "needFldg": null,
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 15,
@@ -1197,7 +1275,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 16,
@@ -1227,7 +1307,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 14,
@@ -1257,7 +1339,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 15,
@@ -1287,7 +1371,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Leads were shared a while back but student contested no calls received, and bank feedback say unreachable.\nHave asked banks to  call again."
+    "reasonNotStarted": "Leads were shared a while back but student contested no calls received, and bank feedback say unreachable.\nHave asked banks to  call again.",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 16,
@@ -1317,7 +1403,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 15,
@@ -1347,7 +1435,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 16,
@@ -1377,7 +1467,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 17,
@@ -1407,7 +1499,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 16,
@@ -1437,7 +1531,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 17,
@@ -1467,7 +1563,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 18,
@@ -1497,7 +1595,9 @@
     "needFldg": "Yes",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Student rejected Propelld and  GyanDhan due to high int, got rejected by ICICI, have suggested to reach out to other banks as well."
+    "reasonNotStarted": "Student rejected Propelld and  GyanDhan due to high int, got rejected by ICICI, have suggested to reach out to other banks as well.",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 17,
@@ -1527,7 +1627,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 18,
@@ -1557,7 +1659,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 19,
@@ -1587,7 +1691,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 20,
@@ -1617,7 +1723,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 21,
@@ -1647,7 +1755,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Father is waiting to come to campus, will reach on 22nd july tomorrow"
+    "reasonNotStarted": "Father is waiting to come to campus, will reach on 22nd july tomorrow",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 18,
@@ -1677,7 +1787,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 19,
@@ -1707,7 +1819,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 20,
@@ -1737,7 +1851,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 19,
@@ -1767,7 +1883,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Already has 3 loans, wants sister to be co-applicant who will start job next month\nWill first ask bank fisrt"
+    "reasonNotStarted": "Already has 3 loans, wants sister to be co-applicant who will start job next month\nWill first ask bank fisrt",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 20,
@@ -1797,7 +1915,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 21,
@@ -1827,7 +1947,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 20,
@@ -1857,7 +1979,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 21,
@@ -1887,7 +2011,9 @@
     "needFldg": null,
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 22,
@@ -1917,7 +2043,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 23,
@@ -1947,7 +2075,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 24,
@@ -1977,7 +2107,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 21,
@@ -2007,7 +2139,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 22,
@@ -2037,7 +2171,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 23,
@@ -2067,7 +2203,9 @@
     "needFldg": "No",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 22,
@@ -2097,7 +2235,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 23,
@@ -2127,7 +2267,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 24,
@@ -2157,7 +2299,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 25,
@@ -2187,7 +2331,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Not sure, whether want loan or not"
+    "reasonNotStarted": "Not sure, whether want loan or not",
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 26,
@@ -2217,7 +2363,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Not sure, whether want loan or not"
+    "reasonNotStarted": "Not sure, whether want loan or not",
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 27,
@@ -2247,7 +2395,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 28,
@@ -2277,7 +2427,9 @@
     "needFldg": "Yes",
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 29,
@@ -2307,7 +2459,9 @@
     "needFldg": "No",
     "needVishwa": null,
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 30,
@@ -2337,7 +2491,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 31,
@@ -2367,7 +2523,9 @@
     "needFldg": "Yes",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 32,
@@ -2382,7 +2540,7 @@
     "annualIncome": 1,
     "incomeProof": "Income Certificate",
     "sstRemarks": "Student reports no communication from ICICI Bank or Propelled. Assistance required",
-    "pranjalComments": "Mother's number : 7972584822 || Have passed on the details to icici\n9/7/26 : ICICI had called the student and mother told they would be sharing the documents\n16/7: Student will call later.\n17/7: Mother said they are not getting loan locally, have dropped the leads.\nReal risk: Mother highlights they dont have any means to fund the education.\nAction: Check on the application status after c+2.\n\n17/7 : Pranjal :  Yearly income : 1.5 Lakhs, own house. doesnt have registry of the house. Income tax filed : no\nHave rejected his loan. \n23/7: DNP",
+    "pranjalComments": "Mother's number : 7972584822 || Have passed on the details to icici\n9/7/26 : ICICI had called the student and mother told they would be sharing the documents\n16/7: Student will call later.\n17/7: Mother said they are not getting loan locally, have dropped the leads.\nReal risk: Mother highlights they dont have any means to fund the education.\nAction: Check on the application status after c+2.\n\n17/7 : Pranjal :  Yearly income : 1.5 Lakhs, own house. doesnt have registry of the house. Income tax filed : no\nHave rejected his loan. \n23/7: DNP\n13/8 : DNP",
     "loanRequired": "Yes",
     "sharedIcici": null,
     "sharedPropelld": null,
@@ -2397,7 +2555,9 @@
     "needFldg": "Yes",
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 33,
@@ -2427,7 +2587,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 34,
@@ -2457,7 +2619,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 35,
@@ -2487,7 +2651,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 36,
@@ -2517,7 +2683,9 @@
     "needFldg": null,
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 37,
@@ -2532,7 +2700,7 @@
     "annualIncome": 1,
     "incomeProof": "EWS",
     "sstRemarks": "Waiting for the bank to reach them out Need assitance from us",
-    "pranjalComments": "Its actual case but looking for some other co-applicant. \n17/7 : Loan required : 26 , Father : Farmer, Brother : Job , Income for the year : 2L/year / Provided to gyan dhan, rejected\nCo app - 2 lakh yearly income\nno ITR or any other income proof\nno additional co app\nNOT DOABLE\n29/7: Has been suggested to with PM Vidya as is a bright student",
+    "pranjalComments": "Its actual case but looking for some other co-applicant. \n17/7 : Loan required : 26 , Father : Farmer, Brother : Job , Income for the year : 2L/year / Provided to gyan dhan, rejected\nCo app - 2 lakh yearly income\nno ITR or any other income proof\nno additional co app\nNOT DOABLE\n29/7: Has been suggested to with PM Vidya as is a bright student\n12/8 : DNR",
     "loanRequired": "Yes",
     "sharedIcici": null,
     "sharedPropelld": "Yes",
@@ -2547,7 +2715,9 @@
     "needFldg": "Yes",
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 38,
@@ -2577,7 +2747,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 39,
@@ -2607,7 +2779,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 40,
@@ -2637,7 +2811,9 @@
     "needFldg": null,
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 41,
@@ -2667,7 +2843,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 42,
@@ -2692,12 +2870,14 @@
     "caseStatus": "Risk",
     "currentCaseStatus": "Control",
     "tentativeDate": null,
-    "loanStage": "Ongoing",
+    "loanStage": "Disbursed",
     "loanStatus": "Processing by Propelld",
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 43,
@@ -2727,7 +2907,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 44,
@@ -2757,7 +2939,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 45,
@@ -2787,7 +2971,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 46,
@@ -2817,7 +3003,9 @@
     "needFldg": null,
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 47,
@@ -2847,7 +3035,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 48,
@@ -2877,7 +3067,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 49,
@@ -2907,7 +3099,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 50,
@@ -2937,7 +3131,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 51,
@@ -2967,7 +3163,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Student rejected propelled due to high int"
+    "reasonNotStarted": "Student rejected propelled due to high int",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 52,
@@ -2997,7 +3195,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP"
+    "reasonNotStarted": "DNP",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 53,
@@ -3027,7 +3227,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 54,
@@ -3057,7 +3259,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 55,
@@ -3087,7 +3291,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP"
+    "reasonNotStarted": "DNP",
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 56,
@@ -3117,7 +3323,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 57,
@@ -3147,7 +3355,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 58,
@@ -3177,7 +3387,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 59,
@@ -3207,7 +3419,9 @@
     "needFldg": "Yes",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Student said they are not comfortable with the high rate of int and payment from first month cause it puts a lots of unnecessary burden, wants to know that for him and other students from low background what options are available."
+    "reasonNotStarted": "Student said they are not comfortable with the high rate of int and payment from first month cause it puts a lots of unnecessary burden, wants to know that for him and other students from low background what options are available.",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 60,
@@ -3237,7 +3451,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 61,
@@ -3267,7 +3483,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 62,
@@ -3297,7 +3515,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP, even partners said DNP"
+    "reasonNotStarted": "DNP, even partners said DNP",
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 63,
@@ -3327,7 +3547,9 @@
     "needFldg": null,
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 64,
@@ -3357,7 +3579,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 65,
@@ -3387,7 +3611,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 66,
@@ -3417,7 +3643,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 67,
@@ -3447,7 +3675,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 68,
@@ -3477,7 +3707,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 69,
@@ -3507,7 +3739,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 70,
@@ -3537,7 +3771,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 71,
@@ -3567,7 +3803,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 72,
@@ -3597,7 +3835,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 73,
@@ -3627,7 +3867,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 74,
@@ -3657,7 +3899,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 75,
@@ -3687,7 +3931,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 76,
@@ -3717,7 +3963,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 77,
@@ -3747,7 +3995,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 78,
@@ -3777,7 +4027,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 79,
@@ -3807,7 +4059,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 80,
@@ -3837,7 +4091,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 81,
@@ -3867,7 +4123,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 82,
@@ -3897,7 +4155,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 83,
@@ -3912,7 +4172,7 @@
     "annualIncome": null,
     "incomeProof": null,
     "sstRemarks": "Might consider after a year",
-    "pranjalComments": "1/8 : Loan required : 20L, Father's profession : Retired govt employee , income : 10L , will share it wth gyan dhan\n7/8 : DNP",
+    "pranjalComments": "1/8 : Loan required : 20L, Father's profession : Retired govt employee , income : 10L , will share it wth gyan dhan\n7/8 : DNP\n11/8 : Document is missing , pension slip is missing , smart edu.",
     "loanRequired": "Yes",
     "sharedIcici": null,
     "sharedPropelld": null,
@@ -3927,7 +4187,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 84,
@@ -3957,7 +4219,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 85,
@@ -3987,7 +4251,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 86,
@@ -4017,7 +4283,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 87,
@@ -4047,7 +4315,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 88,
@@ -4063,21 +4333,23 @@
     "incomeProof": null,
     "sstRemarks": "Callback Morning after father  comes",
     "pranjalComments": "3/8 : Name.. karan chauhan \nGmail.. chauhankaran8081249583@gmail.com\nMob no.. 8081249583\nProfession.. Farmer \nColletral.. land\nItr..Na\nIncome...67000\nProvisional id .... PROV260502584\n\n4/8 : Not Doable no ITR Co Applicant is in Fish Business plus they have EMI on them",
-    "loanRequired": "No",
+    "loanRequired": "Yes",
     "sharedIcici": null,
     "sharedPropelld": null,
     "sharedStudy4Buddy": null,
     "sharedPoonawala": null,
     "sharedGyandhan": null,
-    "caseStatus": "Not required",
-    "currentCaseStatus": "Not required",
+    "caseStatus": "Risk",
+    "currentCaseStatus": "Risk",
     "tentativeDate": null,
     "loanStage": "Not required",
     "loanStatus": null,
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 89,
@@ -4107,7 +4379,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP"
+    "reasonNotStarted": "DNP",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 90,
@@ -4137,7 +4411,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 91,
@@ -4167,7 +4443,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 92,
@@ -4197,7 +4475,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 93,
@@ -4227,7 +4507,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 94,
@@ -4257,7 +4539,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 95,
@@ -4287,7 +4571,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 96,
@@ -4317,7 +4603,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 97,
@@ -4347,7 +4635,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 98,
@@ -4377,7 +4667,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 99,
@@ -4407,7 +4699,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 100,
@@ -4437,7 +4731,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 101,
@@ -4467,7 +4763,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 102,
@@ -4497,7 +4795,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 103,
@@ -4527,7 +4827,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 104,
@@ -4557,7 +4859,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 105,
@@ -4587,7 +4891,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 106,
@@ -4617,7 +4923,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 107,
@@ -4647,7 +4955,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 108,
@@ -4677,7 +4987,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 109,
@@ -4707,7 +5019,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 110,
@@ -4737,7 +5051,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 111,
@@ -4767,7 +5083,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 112,
@@ -4797,7 +5115,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 113,
@@ -4827,7 +5147,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Under review",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 114,
@@ -4857,7 +5179,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 115,
@@ -4887,7 +5211,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 116,
@@ -4917,7 +5243,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 117,
@@ -4947,7 +5275,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 118,
@@ -4977,7 +5307,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 119,
@@ -5007,7 +5339,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 120,
@@ -5037,7 +5371,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 121,
@@ -5067,7 +5403,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 122,
@@ -5097,7 +5435,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 123,
@@ -5127,7 +5467,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 124,
@@ -5157,7 +5499,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 125,
@@ -5187,7 +5531,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 126,
@@ -5217,7 +5563,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 127,
@@ -5247,7 +5595,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 128,
@@ -5277,7 +5627,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 129,
@@ -5307,7 +5659,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 130,
@@ -5337,7 +5691,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 131,
@@ -5367,7 +5723,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 132,
@@ -5397,7 +5755,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 133,
@@ -5427,7 +5787,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 134,
@@ -5457,7 +5819,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 135,
@@ -5487,7 +5851,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 136,
@@ -5517,7 +5883,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 137,
@@ -5547,7 +5915,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 138,
@@ -5577,7 +5947,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 139,
@@ -5607,7 +5979,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 140,
@@ -5637,7 +6011,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 141,
@@ -5667,7 +6043,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 142,
@@ -5697,7 +6075,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 143,
@@ -5727,7 +6107,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 144,
@@ -5757,7 +6139,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 145,
@@ -5787,7 +6171,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 146,
@@ -5817,7 +6203,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 147,
@@ -5847,7 +6235,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 148,
@@ -5877,7 +6267,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 149,
@@ -5907,7 +6299,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 150,
@@ -5937,7 +6331,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 151,
@@ -5967,7 +6363,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 152,
@@ -5997,7 +6395,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 153,
@@ -6027,7 +6427,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 154,
@@ -6057,7 +6459,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 155,
@@ -6087,7 +6491,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 156,
@@ -6117,7 +6523,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 157,
@@ -6147,7 +6555,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 158,
@@ -6177,7 +6587,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 159,
@@ -6207,7 +6619,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 160,
@@ -6237,7 +6651,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 161,
@@ -6267,7 +6683,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 162,
@@ -6297,7 +6715,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 163,
@@ -6327,7 +6747,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 164,
@@ -6357,7 +6779,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 165,
@@ -6387,7 +6811,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 166,
@@ -6417,7 +6843,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 167,
@@ -6447,7 +6875,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 168,
@@ -6477,7 +6907,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 169,
@@ -6507,7 +6939,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 170,
@@ -6537,7 +6971,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 171,
@@ -6567,7 +7003,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 172,
@@ -6597,7 +7035,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 173,
@@ -6627,7 +7067,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 174,
@@ -6642,7 +7084,7 @@
     "annualIncome": null,
     "incomeProof": null,
     "sstRemarks": null,
-    "pranjalComments": "27/7 : Loan req : 18L , Father : civil contractor, ITR filed : Yes , Annual Income : 6L. \n1/8 : Student hasn't even started for the loan. He has got the ITR. \n7/8 : Student is still getting the ITR for 25-26. Someone died in his CA's family, have told them to consult other CA",
+    "pranjalComments": "27/7 : Loan req : 18L , Father : civil contractor, ITR filed : Yes , Annual Income : 6L. \n1/8 : Student hasn't even started for the loan. He has got the ITR. \n7/8 : Student is still getting the ITR for 25-26. Someone died in his CA's family, have told them to consult other CA\n12/8 : CA ka bhai ICU mein hai, spoke to the father pushed him again for the ITR",
     "loanRequired": "Yes",
     "sharedIcici": null,
     "sharedPropelld": null,
@@ -6657,7 +7099,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 175,
@@ -6687,7 +7131,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 176,
@@ -6717,7 +7163,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 177,
@@ -6747,7 +7195,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 178,
@@ -6777,7 +7227,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 179,
@@ -6807,7 +7259,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 180,
@@ -6837,7 +7291,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 181,
@@ -6867,7 +7323,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 182,
@@ -6897,7 +7355,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 183,
@@ -6927,7 +7387,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 184,
@@ -6957,7 +7419,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 185,
@@ -6987,7 +7451,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 186,
@@ -7017,7 +7483,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 187,
@@ -7047,7 +7515,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 188,
@@ -7077,7 +7547,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 189,
@@ -7107,7 +7579,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 190,
@@ -7137,7 +7611,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 191,
@@ -7167,7 +7643,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 192,
@@ -7197,7 +7675,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 193,
@@ -7227,7 +7707,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 194,
@@ -7257,7 +7739,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 195,
@@ -7287,7 +7771,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 196,
@@ -7317,7 +7803,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 197,
@@ -7347,7 +7835,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 198,
@@ -7377,7 +7867,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 199,
@@ -7407,7 +7899,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 200,
@@ -7437,7 +7931,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 201,
@@ -7467,7 +7963,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 202,
@@ -7497,7 +7995,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 203,
@@ -7527,7 +8027,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 204,
@@ -7557,7 +8059,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 205,
@@ -7587,7 +8091,9 @@
     "needFldg": "No",
     "needVishwa": null,
     "needVidyalakshmi": "No",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Under review",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 206,
@@ -7617,7 +8123,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 207,
@@ -7647,7 +8155,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 208,
@@ -7677,7 +8187,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 209,
@@ -7707,7 +8219,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 210,
@@ -7737,7 +8251,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 211,
@@ -7767,7 +8283,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 212,
@@ -7797,7 +8315,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 213,
@@ -7827,7 +8347,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 214,
@@ -7857,7 +8379,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 215,
@@ -7887,7 +8411,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP till now"
+    "reasonNotStarted": "DNP till now",
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 216,
@@ -7917,7 +8443,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 217,
@@ -7947,7 +8475,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 218,
@@ -7977,7 +8507,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 219,
@@ -8007,7 +8539,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 220,
@@ -8037,7 +8571,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 221,
@@ -8067,7 +8603,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 222,
@@ -8097,7 +8635,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP for long , will start now"
+    "reasonNotStarted": "DNP for long , will start now",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 223,
@@ -8127,7 +8667,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 224,
@@ -8157,7 +8699,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 225,
@@ -8187,7 +8731,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 226,
@@ -8217,7 +8763,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 227,
@@ -8242,12 +8790,14 @@
     "caseStatus": "Control",
     "currentCaseStatus": "Control",
     "tentativeDate": null,
-    "loanStage": "Ongoing",
+    "loanStage": "Loan Proccessed/Accepted",
     "loanStatus": "Processing by GyanDhan",
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 228,
@@ -8277,7 +8827,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 229,
@@ -8307,7 +8859,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 230,
@@ -8337,7 +8891,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 231,
@@ -8367,7 +8923,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 232,
@@ -8397,7 +8955,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 233,
@@ -8427,7 +8987,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 234,
@@ -8457,7 +9019,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 235,
@@ -8487,7 +9051,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 236,
@@ -8517,7 +9083,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 237,
@@ -8547,7 +9115,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 238,
@@ -8577,7 +9147,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Not enough info"
+    "reasonNotStarted": "Not enough info",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 239,
@@ -8607,7 +9179,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 240,
@@ -8637,7 +9211,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 241,
@@ -8667,7 +9243,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 242,
@@ -8697,7 +9275,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP till now , now started"
+    "reasonNotStarted": "DNP till now , now started",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 243,
@@ -8727,7 +9307,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 244,
@@ -8757,7 +9339,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 245,
@@ -8787,7 +9371,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 246,
@@ -8817,7 +9403,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 247,
@@ -8847,7 +9435,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 248,
@@ -8877,7 +9467,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP till now, will start now"
+    "reasonNotStarted": "DNP till now, will start now",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 249,
@@ -8907,7 +9499,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 250,
@@ -8937,7 +9531,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 251,
@@ -8967,7 +9563,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 252,
@@ -8997,7 +9595,9 @@
     "needFldg": "Yes",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Very Low income"
+    "reasonNotStarted": "Very Low income",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 253,
@@ -9027,7 +9627,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 254,
@@ -9057,7 +9659,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 255,
@@ -9087,7 +9691,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 256,
@@ -9117,7 +9723,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 257,
@@ -9147,7 +9755,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 258,
@@ -9177,7 +9787,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 259,
@@ -9207,7 +9819,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 260,
@@ -9237,7 +9851,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": "Low eligibility"
+    "reasonNotStarted": "Low eligibility",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 261,
@@ -9267,7 +9883,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 262,
@@ -9297,7 +9915,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 263,
@@ -9327,7 +9947,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 264,
@@ -9357,7 +9979,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 265,
@@ -9387,7 +10011,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 266,
@@ -9417,7 +10043,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 267,
@@ -9447,7 +10075,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 268,
@@ -9477,7 +10107,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 269,
@@ -9507,7 +10139,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 270,
@@ -9537,7 +10171,9 @@
     "needFldg": null,
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Student said no calls till date, has shared profile with gyandhan"
+    "reasonNotStarted": "Student said no calls till date, has shared profile with gyandhan",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 271,
@@ -9567,7 +10203,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 272,
@@ -9597,7 +10235,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 273,
@@ -9627,7 +10267,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 274,
@@ -9657,7 +10299,9 @@
     "needFldg": "Yes",
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP till now"
+    "reasonNotStarted": "DNP till now",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 275,
@@ -9687,7 +10331,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 276,
@@ -9717,7 +10363,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 277,
@@ -9747,7 +10395,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 278,
@@ -9777,7 +10427,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": "Will start the process"
+    "reasonNotStarted": "Will start the process",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 279,
@@ -9807,7 +10459,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 280,
@@ -9837,7 +10491,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 281,
@@ -9867,7 +10523,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 282,
@@ -9897,7 +10555,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 283,
@@ -9927,7 +10587,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP"
+    "reasonNotStarted": "DNP",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 284,
@@ -9957,7 +10619,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 285,
@@ -9987,7 +10651,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 286,
@@ -10017,7 +10683,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Process will start now"
+    "reasonNotStarted": "Process will start now",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 287,
@@ -10047,7 +10715,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 288,
@@ -10077,7 +10747,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Process will start now"
+    "reasonNotStarted": "Process will start now",
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 289,
@@ -10107,7 +10779,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 290,
@@ -10137,7 +10811,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 291,
@@ -10167,7 +10843,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Process will start now"
+    "reasonNotStarted": "Process will start now",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 292,
@@ -10197,7 +10875,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Low eligibilty"
+    "reasonNotStarted": "Low eligibilty",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 293,
@@ -10227,7 +10907,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Process will start now"
+    "reasonNotStarted": "Process will start now",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 294,
@@ -10257,7 +10939,9 @@
     "needFldg": "Yes",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": "Low eligibilty"
+    "reasonNotStarted": "Low eligibilty",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 295,
@@ -10287,7 +10971,9 @@
     "needFldg": "No",
     "needVishwa": "Yes",
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 296,
@@ -10317,7 +11003,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 297,
@@ -10332,7 +11020,7 @@
     "annualIncome": "3 lac",
     "incomeProof": "Income certificate",
     "sstRemarks": null,
-    "pranjalComments": "25/7 : Loan req : 16L, Father : Govt. bank employee , Annual income : 3.75L, ITR filed : yes",
+    "pranjalComments": "25/7 : Loan req : 16L, Father : Govt. bank employee , Annual income : 3.75L, ITR filed : yes \n13/8 : Contacted again , from gyan dhan",
     "loanRequired": "Yes",
     "sharedIcici": "Yes",
     "sharedPropelld": "Yes",
@@ -10347,7 +11035,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 298,
@@ -10377,7 +11067,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 299,
@@ -10407,7 +11099,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 300,
@@ -10437,7 +11131,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP till now , now started"
+    "reasonNotStarted": "DNP till now , now started",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 301,
@@ -10467,7 +11163,9 @@
     "needFldg": "No",
     "needVishwa": "No",
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 302,
@@ -10497,7 +11195,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 303,
@@ -10527,7 +11227,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 304,
@@ -10557,7 +11259,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 305,
@@ -10587,7 +11291,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 306,
@@ -10617,7 +11323,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 307,
@@ -10647,7 +11355,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 308,
@@ -10677,7 +11387,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 309,
@@ -10707,7 +11419,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 310,
@@ -10737,7 +11451,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 311,
@@ -10767,7 +11483,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 312,
@@ -10797,7 +11515,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 313,
@@ -10827,7 +11547,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 314,
@@ -10857,7 +11579,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 315,
@@ -10887,7 +11611,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 316,
@@ -10917,7 +11643,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 317,
@@ -10947,7 +11675,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 318,
@@ -10977,7 +11707,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 319,
@@ -11007,7 +11739,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 320,
@@ -11037,7 +11771,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 321,
@@ -11067,7 +11803,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 322,
@@ -11097,7 +11835,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 323,
@@ -11127,7 +11867,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 324,
@@ -11157,7 +11899,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 325,
@@ -11187,7 +11931,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 326,
@@ -11217,7 +11963,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 327,
@@ -11247,7 +11995,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 328,
@@ -11277,7 +12027,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 329,
@@ -11307,7 +12059,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 330,
@@ -11337,7 +12091,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 331,
@@ -11367,7 +12123,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 332,
@@ -11397,7 +12155,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 333,
@@ -11427,7 +12187,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Started elsewhere didnt get it"
+    "reasonNotStarted": "Started elsewhere didnt get it",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 334,
@@ -11457,7 +12219,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 335,
@@ -11487,7 +12251,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 336,
@@ -11517,7 +12283,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 337,
@@ -11547,7 +12315,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Under review",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 338,
@@ -11577,7 +12347,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "DNP till now , now started"
+    "reasonNotStarted": "DNP till now , now started",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 339,
@@ -11607,7 +12379,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 340,
@@ -11637,7 +12411,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 341,
@@ -11667,7 +12443,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 342,
@@ -11697,7 +12475,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Newer Lead"
+    "reasonNotStarted": "Newer Lead",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 343,
@@ -11727,7 +12507,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 344,
@@ -11757,7 +12539,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 345,
@@ -11787,7 +12571,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 346,
@@ -11817,7 +12603,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 347,
@@ -11847,7 +12635,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 348,
@@ -11877,7 +12667,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 349,
@@ -11907,7 +12699,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 350,
@@ -11937,7 +12731,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 351,
@@ -11967,7 +12763,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 352,
@@ -11997,7 +12795,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 353,
@@ -12027,7 +12827,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 354,
@@ -12057,7 +12859,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 355,
@@ -12087,7 +12891,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Will start now"
+    "reasonNotStarted": "Will start now",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 356,
@@ -12117,7 +12923,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 357,
@@ -12147,7 +12955,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 358,
@@ -12177,7 +12987,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 359,
@@ -12207,7 +13019,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 360,
@@ -12237,7 +13051,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 361,
@@ -12267,7 +13083,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 362,
@@ -12297,7 +13115,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 363,
@@ -12327,7 +13147,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 364,
@@ -12357,7 +13179,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": "Went to SBI:- Rejected"
+    "reasonNotStarted": "Went to SBI:- Rejected",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 365,
@@ -12387,7 +13211,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 366,
@@ -12417,7 +13243,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 367,
@@ -12447,7 +13275,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 368,
@@ -12477,7 +13307,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 369,
@@ -12507,7 +13339,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 370,
@@ -12537,7 +13371,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 371,
@@ -12567,7 +13403,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 372,
@@ -12597,7 +13435,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 373,
@@ -12627,7 +13467,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Newer Lead"
+    "reasonNotStarted": "Newer Lead",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 374,
@@ -12657,7 +13499,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 375,
@@ -12687,7 +13531,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 376,
@@ -12717,7 +13563,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Newer Lead"
+    "reasonNotStarted": "Newer Lead",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 377,
@@ -12747,7 +13595,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 378,
@@ -12777,7 +13627,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 379,
@@ -12807,7 +13659,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 380,
@@ -12837,7 +13691,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 381,
@@ -12867,7 +13723,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 382,
@@ -12897,7 +13755,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 383,
@@ -12927,7 +13787,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 384,
@@ -12957,7 +13819,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 385,
@@ -12987,7 +13851,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 386,
@@ -13017,7 +13883,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 387,
@@ -13047,7 +13915,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 388,
@@ -13077,7 +13947,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "ADYPU"
   },
   {
     "sno": 389,
@@ -13107,7 +13979,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 390,
@@ -13137,7 +14011,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 391,
@@ -13167,7 +14043,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 392,
@@ -13197,7 +14075,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "Will share details later"
+    "reasonNotStarted": "Will share details later",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 393,
@@ -13227,7 +14107,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": "He was told he would get loan, without collateral so he didnt apply anywhere as he thought that he will get it automatically when he comes to the campus"
+    "reasonNotStarted": "He was told he would get loan, without collateral so he didnt apply anywhere as he thought that he will get it automatically when he comes to the campus",
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 394,
@@ -13257,7 +14139,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 395,
@@ -13287,7 +14171,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 396,
@@ -13317,7 +14203,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 397,
@@ -13347,7 +14235,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 398,
@@ -13377,7 +14267,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 399,
@@ -13407,7 +14299,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 400,
@@ -13437,7 +14331,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 401,
@@ -13467,7 +14363,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 402,
@@ -13497,7 +14395,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 403,
@@ -13527,7 +14427,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 404,
@@ -13557,7 +14459,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 405,
@@ -13587,7 +14491,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 406,
@@ -13617,7 +14523,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 407,
@@ -13647,7 +14555,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 408,
@@ -13677,7 +14587,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 409,
@@ -13707,7 +14619,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 410,
@@ -13737,7 +14651,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 411,
@@ -13767,7 +14683,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 412,
@@ -13797,7 +14715,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 413,
@@ -13827,7 +14747,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 414,
@@ -13857,7 +14779,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 415,
@@ -13887,7 +14811,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 416,
@@ -13917,7 +14843,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 417,
@@ -13947,7 +14875,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes - Loan not required",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 418,
@@ -13977,7 +14907,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 419,
@@ -14007,7 +14939,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 420,
@@ -14037,7 +14971,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 421,
@@ -14067,7 +15003,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 422,
@@ -14097,7 +15035,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 423,
@@ -14127,7 +15067,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 424,
@@ -14157,7 +15099,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 425,
@@ -14187,7 +15131,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 426,
@@ -14217,7 +15163,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 427,
@@ -14247,7 +15195,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 428,
@@ -14277,7 +15227,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 429,
@@ -14307,7 +15259,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 430,
@@ -14337,7 +15291,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 431,
@@ -14367,7 +15323,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 432,
@@ -14397,7 +15355,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 433,
@@ -14427,7 +15387,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 434,
@@ -14457,7 +15419,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 435,
@@ -14487,7 +15451,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 436,
@@ -14517,7 +15483,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 437,
@@ -14547,7 +15515,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 438,
@@ -14577,7 +15547,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "Yes",
+    "semFeeCampus": "SSAHE"
   },
   {
     "sno": 439,
@@ -14607,7 +15579,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 440,
@@ -14637,7 +15611,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 441,
@@ -14667,7 +15643,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 442,
@@ -14697,7 +15675,9 @@
     "needFldg": "Yes",
     "needVishwa": null,
     "needVidyalakshmi": "Yes",
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 443,
@@ -14727,7 +15707,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 444,
@@ -14757,7 +15739,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 445,
@@ -14787,7 +15771,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 446,
@@ -14817,7 +15803,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 447,
@@ -14847,7 +15835,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 448,
@@ -14877,7 +15867,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 449,
@@ -14907,7 +15899,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 450,
@@ -14937,7 +15931,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 451,
@@ -14967,7 +15963,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 452,
@@ -14997,7 +15995,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 453,
@@ -15005,7 +16005,7 @@
     "mobile": 7009000941,
     "provisionalId": "PROV260707312",
     "campus": "SSAHE",
-    "needLoanSst": "No",
+    "needLoanSst": "Yes",
     "criticality": null,
     "scholarship": null,
     "loanAmt": null,
@@ -15027,7 +16027,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 454,
@@ -15057,7 +16059,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 455,
@@ -15087,7 +16091,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 456,
@@ -15117,7 +16123,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 457,
@@ -15147,7 +16155,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 458,
@@ -15177,7 +16187,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 459,
@@ -15207,7 +16219,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 460,
@@ -15237,7 +16251,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 461,
@@ -15267,7 +16283,9 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 462,
@@ -15297,103 +16315,15 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
     "sno": 463,
     "name": "Gaurav pardeshi",
     "mobile": 9356225954,
     "provisionalId": "PROV260504401",
-    "campus": "ADYPU",
-    "needLoanSst": null,
-    "criticality": null,
-    "scholarship": null,
-    "loanAmt": null,
-    "annualIncome": null,
-    "incomeProof": null,
-    "sstRemarks": null,
-    "pranjalComments": null,
-    "loanRequired": null,
-    "sharedIcici": null,
-    "sharedPropelld": null,
-    "sharedStudy4Buddy": null,
-    "sharedPoonawala": null,
-    "sharedGyandhan": null,
-    "caseStatus": null,
-    "currentCaseStatus": null,
-    "tentativeDate": null,
-    "loanStage": null,
-    "loanStatus": null,
-    "needFldg": null,
-    "needVishwa": null,
-    "needVidyalakshmi": null,
-    "reasonNotStarted": null
-  },
-  {
-    "sno": 464,
-    "name": "darshit Priyadarshi",
-    "mobile": 9296792785,
-    "provisionalId": "PROV260800760",
-    "campus": "ADYPU",
-    "needLoanSst": null,
-    "criticality": null,
-    "scholarship": null,
-    "loanAmt": null,
-    "annualIncome": null,
-    "incomeProof": null,
-    "sstRemarks": null,
-    "pranjalComments": null,
-    "loanRequired": null,
-    "sharedIcici": null,
-    "sharedPropelld": null,
-    "sharedStudy4Buddy": null,
-    "sharedPoonawala": null,
-    "sharedGyandhan": null,
-    "caseStatus": null,
-    "currentCaseStatus": null,
-    "tentativeDate": null,
-    "loanStage": null,
-    "loanStatus": null,
-    "needFldg": null,
-    "needVishwa": null,
-    "needVidyalakshmi": null,
-    "reasonNotStarted": null
-  },
-  {
-    "sno": 465,
-    "name": "Jayesh Prakash Chaudary",
-    "mobile": 8600995542,
-    "provisionalId": "PROV260706858",
-    "campus": "ADYPU",
-    "needLoanSst": null,
-    "criticality": null,
-    "scholarship": null,
-    "loanAmt": null,
-    "annualIncome": null,
-    "incomeProof": null,
-    "sstRemarks": null,
-    "pranjalComments": null,
-    "loanRequired": null,
-    "sharedIcici": null,
-    "sharedPropelld": null,
-    "sharedStudy4Buddy": null,
-    "sharedPoonawala": null,
-    "sharedGyandhan": null,
-    "caseStatus": null,
-    "currentCaseStatus": null,
-    "tentativeDate": null,
-    "loanStage": null,
-    "loanStatus": null,
-    "needFldg": null,
-    "needVishwa": null,
-    "needVidyalakshmi": null,
-    "reasonNotStarted": null
-  },
-  {
-    "sno": 466,
-    "name": "Anil Bhimrao Rathod",
-    "mobile": 7028049836,
-    "provisionalId": "PROV260800676",
     "campus": "ADYPU",
     "needLoanSst": "Yes",
     "criticality": null,
@@ -15417,15 +16347,17 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   },
   {
-    "sno": 467,
-    "name": "jayant chhonkar",
-    "mobile": 8439351822,
-    "provisionalId": "PROV260607691",
+    "sno": 464,
+    "name": "darshit Priyadarshi",
+    "mobile": 9296792785,
+    "provisionalId": "PROV260800760",
     "campus": "ADYPU",
-    "needLoanSst": null,
+    "needLoanSst": "No",
     "criticality": null,
     "scholarship": null,
     "loanAmt": null,
@@ -15447,6 +16379,104 @@
     "needFldg": null,
     "needVishwa": null,
     "needVidyalakshmi": null,
-    "reasonNotStarted": null
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
+  },
+  {
+    "sno": 465,
+    "name": "Jayesh Prakash Chaudary",
+    "mobile": 8600995542,
+    "provisionalId": "PROV260706858",
+    "campus": "ADYPU",
+    "needLoanSst": "DNR",
+    "criticality": null,
+    "scholarship": null,
+    "loanAmt": null,
+    "annualIncome": null,
+    "incomeProof": null,
+    "sstRemarks": null,
+    "pranjalComments": null,
+    "loanRequired": null,
+    "sharedIcici": null,
+    "sharedPropelld": null,
+    "sharedStudy4Buddy": null,
+    "sharedPoonawala": null,
+    "sharedGyandhan": null,
+    "caseStatus": null,
+    "currentCaseStatus": null,
+    "tentativeDate": null,
+    "loanStage": null,
+    "loanStatus": null,
+    "needFldg": null,
+    "needVishwa": null,
+    "needVidyalakshmi": null,
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
+  },
+  {
+    "sno": 466,
+    "name": "Anil Bhimrao Rathod",
+    "mobile": 7028049836,
+    "provisionalId": "PROV260800676",
+    "campus": "ADYPU",
+    "needLoanSst": "Yes",
+    "criticality": null,
+    "scholarship": null,
+    "loanAmt": null,
+    "annualIncome": null,
+    "incomeProof": null,
+    "sstRemarks": null,
+    "pranjalComments": "12/8 : have guided the father and the student around the PM vidyalakshmi, father only wanted the loan where he has not pay the interest in 4 years",
+    "loanRequired": "Yes",
+    "sharedIcici": null,
+    "sharedPropelld": null,
+    "sharedStudy4Buddy": null,
+    "sharedPoonawala": null,
+    "sharedGyandhan": null,
+    "caseStatus": "Control",
+    "currentCaseStatus": "Control",
+    "tentativeDate": null,
+    "loanStage": "Not even started",
+    "loanStatus": null,
+    "needFldg": null,
+    "needVishwa": null,
+    "needVidyalakshmi": null,
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
+  },
+  {
+    "sno": 467,
+    "name": "jayant chhonkar",
+    "mobile": 8439351822,
+    "provisionalId": "PROV260607691",
+    "campus": "ADYPU",
+    "needLoanSst": "Yes",
+    "criticality": null,
+    "scholarship": null,
+    "loanAmt": null,
+    "annualIncome": null,
+    "incomeProof": null,
+    "sstRemarks": null,
+    "pranjalComments": null,
+    "loanRequired": null,
+    "sharedIcici": null,
+    "sharedPropelld": null,
+    "sharedStudy4Buddy": null,
+    "sharedPoonawala": null,
+    "sharedGyandhan": null,
+    "caseStatus": null,
+    "currentCaseStatus": null,
+    "tentativeDate": null,
+    "loanStage": null,
+    "loanStatus": null,
+    "needFldg": null,
+    "needVishwa": null,
+    "needVidyalakshmi": null,
+    "reasonNotStarted": null,
+    "semFeePaid": "No",
+    "semFeeCampus": null
   }
 ]

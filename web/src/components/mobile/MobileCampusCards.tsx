@@ -9,6 +9,7 @@ type Row = {
   disbursed: number;
   rejected: number;
   riskCases: number;
+  semFeePaid: number;
 };
 
 export function MobileCampusCards({ rows }: { rows: Row[] }) {
@@ -44,7 +45,8 @@ export function MobileCampusCards({ rows }: { rows: Row[] }) {
                 style={{ width: `${pct}%` }}
               />
             </div>
-            <div className="grid grid-cols-4 gap-1 text-center">
+            <div className="grid grid-cols-5 gap-1 text-center">
+              <MiniStat label="Fee" value={r.semFeePaid} />
               <MiniStat label="Proc." value={r.processing} />
               <MiniStat label="Sanc." value={r.sanctioned} />
               <MiniStat label="Disb." value={r.disbursed} />

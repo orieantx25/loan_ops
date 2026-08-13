@@ -14,6 +14,25 @@ function yes(v: unknown): boolean {
     .toLowerCase() === "yes";
 }
 
+/** Sem Fee Paid (AO): count only "Yes" and "Yes - Under review". */
+export function isSemFeePaidCounted(raw: unknown): boolean {
+  const s = String(raw ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
+  if (s === "yes") return true;
+  if (s.startsWith("yes") && s.includes("under review")) return true;
+  return false;
+}
+
+export function isSemFeeUnderReview(raw: unknown): boolean {
+  const s = String(raw ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
+  return s.startsWith("yes") && s.includes("under review");
+}
+
 function trim(v: unknown): string {
   return String(v ?? "").trim();
 }
@@ -453,6 +472,8 @@ export function enrichStudents(raw: RawStudent[]): Student[] {
 
     const days = pendingDays(r.tentativeDate ? String(r.tentativeDate) : null);
     const loanRequired = trim(r.loanRequired);
+    const semFeePaidRaw = trim(r.semFeePaid);
+    const semFeeCampusRaw = trim(r.semFeeCampus);
 
     return {
       key: studentKey(r),
@@ -505,6 +526,12 @@ export function enrichStudents(raw: RawStudent[]): Student[] {
       pendingDays: days,
       ageingBucket: ageingBucket(days),
       comments: trim(r.pranjalComments),
+      semFeePaidRaw,
+      semFeePaid: isSemFeePaidCounted(semFeePaidRaw),
+      semFeeUnderReview: isSemFeeUnderReview(semFeePaidRaw),
+      semFeeCampus: semFeeCampusRaw
+        ? normCampus(semFeeCampusRaw)
+        : normCampus(trim(r.campus)),
     };
   });
 }
@@ -740,6 +767,22 @@ export function computeAnalytics(students: Student[]) {
     currentCaseStatus: buildCaseStatusList(students, "currentCaseStatus"),
   };
 
+  const semFeePaidStudents = students.filter((s) => s.semFeePaid);
+  const semFeePaidYes = semFeePaidStudents.filter(
+    (s) => !s.semFeeUnderReview,
+  ).length;
+  const semFeePaidUnderReview = semFeePaidStudents.filter(
+    (s) => s.semFeeUnderReview,
+  ).length;
+  const semFeePaidTotal = semFeePaidStudents.length;
+  const semFeePaidByCampus = Object.entries(
+    countBy(semFeePaidStudents, (s) =>
+      campusDisplayLabel(s.semFeeCampus || s.campus),
+    ),
+  )
+    .map(([campus, count]) => ({ campus, count }))
+    .sort((a, b) => b.count - a.count);
+
   return {
     total,
     needLoan,
@@ -769,6 +812,10 @@ export function computeAnalytics(students: Student[]) {
     topPending,
     byStage,
     dataSheet,
+    semFeePaidTotal,
+    semFeePaidYes,
+    semFeePaidUnderReview,
+    semFeePaidByCampus,
   };
 }
 
@@ -790,6 +837,7 @@ function buildCampusRow(students: Student[], campusLabel: string) {
     disbursed: rows.filter((s) => s.stage === "Disbursed").length,
     rejected: rows.filter((s) => s.stage === "Rejected").length,
     riskCases: rows.filter((s) => caseStatusLower(s) === "risk").length,
+    semFeePaid: rows.filter((s) => s.semFeePaid).length,
   };
 }
 

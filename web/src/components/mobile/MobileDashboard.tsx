@@ -216,6 +216,40 @@ export function MobileDashboard({
           </div>
 
           <div className="space-y-2">
+            <SectionLabel>Sem fee paid</SectionLabel>
+            <p className="text-[0.72rem] text-sot-black/65">
+              Yes + Yes - Under review only (AO).
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              <KpiTile
+                label="Sem Fee Paid"
+                value={a.semFeePaidTotal}
+                tone="green"
+              />
+              <KpiTile label="Yes" value={a.semFeePaidYes} tone="green" />
+              <KpiTile
+                label="Under review"
+                value={a.semFeePaidUnderReview}
+                tone="amber"
+              />
+            </div>
+            {a.semFeePaidByCampus.length > 0 ? (
+              <div className="card card-pad space-y-2">
+                <div className="text-[0.75rem] font-semibold">By campus (AP)</div>
+                {a.semFeePaidByCampus.map((r) => (
+                  <div
+                    key={r.campus}
+                    className="flex justify-between text-[0.8rem]"
+                  >
+                    <span>{r.campus}</span>
+                    <span className="font-semibold">{r.count}</span>
+                  </div>
+                ))}
+              </div>
+            ) : null}
+          </div>
+
+          <div className="space-y-2">
             <SectionLabel>Attention needed</SectionLabel>
             <div className="grid grid-cols-2 gap-2">
               <KpiTile label="Risk Cases" value={a.riskCases} tone="red" />
