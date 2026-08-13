@@ -253,6 +253,16 @@ export function MobileDashboard({
             <SectionLabel>Attention needed</SectionLabel>
             <div className="grid grid-cols-2 gap-2">
               <KpiTile label="Risk Cases" value={a.riskCases} tone="red" />
+              <KpiTile
+                label="Risk · Sem Fee Paid"
+                value={a.riskCasesSemFeePaid}
+                tone="green"
+                hint={
+                  a.riskCases
+                    ? `${a.riskCasesSemFeePaid}/${a.riskCases} risk`
+                    : undefined
+                }
+              />
               <KpiTile label="Need FLDG" value={a.needFldg} tone="red" />
               <KpiTile
                 label="Need Vidyalakshmi"

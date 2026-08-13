@@ -210,11 +210,21 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
           </div>
 
           <SectionLabel>Attention needed</SectionLabel>
-          <div className="kpi-scroll flex md:grid md:grid-cols-5 gap-3 overflow-x-auto pb-1">
+          <div className="kpi-scroll flex md:grid md:grid-cols-6 gap-3 overflow-x-auto pb-1">
             <KpiCard
               label="Risk Cases"
               value={a.riskCases}
               tone="red"
+            />
+            <KpiCard
+              label="Risk · Sem Fee Paid"
+              value={a.riskCasesSemFeePaid}
+              tone="green"
+              hint={
+                a.riskCases
+                  ? `${a.riskCasesSemFeePaid} of ${a.riskCases} risk (${((a.riskCasesSemFeePaid / a.riskCases) * 100).toFixed(0)}%)`
+                  : "No risk cases"
+              }
             />
             <KpiCard
               label="Need FLDG"

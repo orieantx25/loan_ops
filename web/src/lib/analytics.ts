@@ -588,6 +588,9 @@ export function computeAnalytics(students: Student[]) {
   const riskCases = students.filter(
     (s) => caseStatusLower(s) === "risk",
   ).length;
+  const riskCasesSemFeePaid = students.filter(
+    (s) => caseStatusLower(s) === "risk" && s.semFeePaid,
+  ).length;
   const dupVendors = students.filter((s) => s.duplicateVendor).length;
   const withVendor = students.filter((s) => s.vendorCount >= 1).length;
   const totalApps = students.reduce((a, s) => a + s.vendorCount, 0);
@@ -796,6 +799,7 @@ export function computeAnalytics(students: Student[]) {
     needVidyalakshmi,
     critical,
     riskCases,
+    riskCasesSemFeePaid,
     dupVendors,
     withVendor,
     avgVendors,
