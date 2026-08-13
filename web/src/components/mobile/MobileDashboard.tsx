@@ -217,9 +217,6 @@ export function MobileDashboard({
 
           <div className="space-y-2">
             <SectionLabel>Sem fee paid</SectionLabel>
-            <p className="text-[0.72rem] text-sot-black/65">
-              Yes + Yes - Under review only (AO).
-            </p>
             <div className="grid grid-cols-2 gap-2">
               <KpiTile
                 label="Sem Fee Paid"
@@ -235,7 +232,7 @@ export function MobileDashboard({
             </div>
             {a.semFeePaidByCampus.length > 0 ? (
               <div className="card card-pad space-y-2">
-                <div className="text-[0.75rem] font-semibold">By campus (AP)</div>
+                <div className="text-[0.75rem] font-semibold">By campus</div>
                 {a.semFeePaidByCampus.map((r) => (
                   <div
                     key={r.campus}
