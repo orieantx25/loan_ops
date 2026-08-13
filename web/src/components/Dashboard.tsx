@@ -185,12 +185,12 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
                 }
               />
               <KpiCard
-                label="Yes"
+                label="Sem Fee paid - Varified"
                 value={a.semFeePaidYes}
                 tone="green"
               />
               <KpiCard
-                label="Yes - Under review"
+                label="Sem fee paid - under review"
                 value={a.semFeePaidUnderReview}
                 tone="amber"
               />

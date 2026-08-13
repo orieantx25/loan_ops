@@ -223,9 +223,13 @@ export function MobileDashboard({
                 value={a.semFeePaidTotal}
                 tone="green"
               />
-              <KpiTile label="Yes" value={a.semFeePaidYes} tone="green" />
               <KpiTile
-                label="Under review"
+                label="Sem Fee paid - Varified"
+                value={a.semFeePaidYes}
+                tone="green"
+              />
+              <KpiTile
+                label="Sem fee paid - under review"
                 value={a.semFeePaidUnderReview}
                 tone="amber"
               />
