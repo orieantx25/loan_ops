@@ -23,6 +23,7 @@ import { StudentDrawer } from "./StudentDrawer";
 import { SectionNav } from "./SectionNav";
 import { DashboardHeader } from "./DashboardHeader";
 import { MobileDashboard } from "./mobile/MobileDashboard";
+import { OpsFlagsPanels } from "./OpsFlagsPanels";
 
 export function Dashboard({ raw }: { raw: RawStudent[] }) {
   const isMobile = useIsMobile();
@@ -358,6 +359,10 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
           </div>
         </section>
 
+        <section id="ops" className="scroll-mt-4 space-y-3">
+          <OpsFlagsPanels ops={a.opsFlags} />
+        </section>
+
         <section id="students" className="scroll-mt-4 space-y-4">
           <SectionLabel>Students</SectionLabel>
           <StudentTable
@@ -379,6 +384,24 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
           <StudentTable
             title="Need Vidyalakshmi Attention"
             students={filtered.filter((s) => s.needVidyalakshmi)}
+            onSelect={setSelected}
+            onClearFilters={reset}
+            collapsible
+            defaultOpen={false}
+          />
+          <StudentTable
+            title="Needs Vishwa's attention"
+            students={filtered.filter((s) => s.needVishwa)}
+            onSelect={setSelected}
+            onClearFilters={reset}
+            collapsible
+            defaultOpen={false}
+          />
+          <StudentTable
+            title="Might drop"
+            students={filtered.filter((s) =>
+              s.dropStatus.toLowerCase().includes("might drop"),
+            )}
             onSelect={setSelected}
             onClearFilters={reset}
             collapsible

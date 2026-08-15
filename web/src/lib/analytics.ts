@@ -62,7 +62,7 @@ function vendorsOf(r: RawStudent): string[] {
   if (yes(r.sharedIcici)) list.push("ICICI");
   if (yes(r.sharedPropelld)) list.push("Propelld");
   if (yes(r.sharedStudy4Buddy)) list.push("Study4Buddy");
-  if (yes(r.sharedPoonawala)) list.push("Poonawala Fincorp");
+  if (yes(r.sharedSmartEdu) || yes(r.sharedPoonawala)) list.push("Smart Edu");
   if (yes(r.sharedGyandhan)) list.push("GyanDhan");
   return list;
 }
@@ -452,7 +452,9 @@ export function enrichStudents(raw: RawStudent[]): Student[] {
     const stage = canonicalStage(r, vendors.length);
     const criticality = trim(r.criticality);
     const needFldg = yes(r.needFldg);
-    const needVidyalakshmi = yes(r.needVidyalakshmi);
+    const processingVidyalakshmi = yes(r.processingVidyalakshmi);
+    const sanctionedVidyalakshmi = yes(r.sanctionedVidyalakshmi);
+    const needVidyalakshmi = processingVidyalakshmi || yes(r.needVidyalakshmi);
     const needVishwa = yes(r.needVishwa);
     const caseStatus = trim(r.caseStatus);
     const currentCaseStatus = trim(r.currentCaseStatus);
@@ -531,7 +533,15 @@ export function enrichStudents(raw: RawStudent[]): Student[] {
       semFeeUnderReview: isSemFeeUnderReview(semFeePaidRaw),
       semFeeCampus: semFeeCampusRaw
         ? normCampus(semFeeCampusRaw)
-        : normCampus(trim(r.campus)),
+        : "",
+      processingVidyalakshmi,
+      sanctionedVidyalakshmi,
+      bankerStatus: trim(r.bankerStatus),
+      dropStatus: trim(r.dropStatus),
+      intentRevertedToSst: trim(r.intentRevertedToSst),
+      loanAmountSanctioned: trim(r.loanAmountSanctioned),
+      mentorFlag: trim(r.mentorFlag),
+      sstComments: trim(r.sstComments),
     };
   });
 }
@@ -791,6 +801,8 @@ export function computeAnalytics(students: Student[]) {
     .map(([campus, count]) => ({ campus, count }))
     .sort((a, b) => b.count - a.count);
 
+  const opsFlags = buildOpsFlags(students);
+
   return {
     total,
     needLoan,
@@ -826,12 +838,91 @@ export function computeAnalytics(students: Student[]) {
     semFeePaidYes,
     semFeePaidUnderReview,
     semFeePaidByCampus,
+    opsFlags,
   };
 }
 
 function campusDisplayLabel(campus: string): string {
   if (!campus || campus === "—") return "Unassigned";
   return campus;
+}
+
+function valueDist(
+  students: Student[],
+  keyFn: (s: Student) => string,
+  blankLabel = "(blank)",
+): { label: string; count: number }[] {
+  return Object.entries(
+    countBy(students, (s) => keyFn(s).trim() || blankLabel),
+  )
+    .map(([label, count]) => ({ label, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+function buildOpsFlags(students: Student[]) {
+  const fldg = students.filter((s) => s.needFldg);
+  const fldgAndProcessing = fldg.filter((s) => s.processingVidyalakshmi);
+  const fldgAndSanctioned = fldg.filter((s) => s.sanctionedVidyalakshmi);
+  const fldgNotProcessing = fldg.filter((s) => !s.processingVidyalakshmi);
+  const fldgProcessingAndSanctioned = fldg.filter(
+    (s) => s.processingVidyalakshmi && s.sanctionedVidyalakshmi,
+  );
+
+  const campusLabels = [
+    ...new Set(fldg.map((s) => campusDisplayLabel(s.campus))),
+  ].sort((a, b) => a.localeCompare(b));
+
+  const fldgByCampus = campusLabels.map((campus) => {
+    const rows = fldg.filter((s) => campusDisplayLabel(s.campus) === campus);
+    return {
+      campus,
+      needFldg: rows.length,
+      fldgAndProcessing: rows.filter((s) => s.processingVidyalakshmi).length,
+      fldgNotProcessing: rows.filter((s) => !s.processingVidyalakshmi).length,
+      fldgProcessingAndSanctioned: rows.filter(
+        (s) => s.processingVidyalakshmi && s.sanctionedVidyalakshmi,
+      ).length,
+    };
+  });
+
+  const sstCommentBuckets = valueDist(students, (s) => {
+    const t = s.sstComments.trim();
+    if (!t) return "";
+    if (t.length > 60) return "Detailed note";
+    return t;
+  }).filter((r) => r.label !== "(blank)");
+
+  return {
+    fldgTotal: fldg.length,
+    fldgAndProcessing: fldgAndProcessing.length,
+    fldgAndSanctioned: fldgAndSanctioned.length,
+    fldgNotProcessing: fldgNotProcessing.length,
+    fldgProcessingAndSanctioned: fldgProcessingAndSanctioned.length,
+    fldgByCampus,
+    vishwaYes: students.filter((s) => s.needVishwa).length,
+    processingVidyalakshmi: students.filter((s) => s.processingVidyalakshmi)
+      .length,
+    sanctionedVidyalakshmi: students.filter((s) => s.sanctionedVidyalakshmi)
+      .length,
+    bankerStatus: valueDist(students, (s) => s.bankerStatus).filter(
+      (r) => r.label !== "(blank)",
+    ),
+    bankerFilled: students.filter((s) => s.bankerStatus).length,
+    dropStatus: valueDist(students, (s) => s.dropStatus),
+    dropMight: students.filter((s) =>
+      s.dropStatus.toLowerCase().includes("might drop"),
+    ).length,
+    intentFilled: students.filter((s) => s.intentRevertedToSst).length,
+    loanAmountSanctionedFilled: students.filter((s) => s.loanAmountSanctioned)
+      .length,
+    loanAmountSanctioned: valueDist(students, (s) => s.loanAmountSanctioned).filter(
+      (r) => r.label !== "(blank)",
+    ),
+    mentorFlag: valueDist(students, (s) => s.mentorFlag),
+    mentorFilled: students.filter((s) => s.mentorFlag).length,
+    sstCommentsFilled: students.filter((s) => s.sstComments).length,
+    sstComments: sstCommentBuckets,
+  };
 }
 
 function buildCampusRow(students: Student[], campusLabel: string) {
@@ -856,7 +947,8 @@ const STATUS_VENDOR_PATTERNS: [RegExp, string][] = [
   [/Propelld/i, "Propelld"],
   [/GyanDhan/i, "GyanDhan"],
   [/Study4Buddy/i, "Study4Buddy"],
-  [/Poonawala/i, "Poonawala Fincorp"],
+  [/Smart Edu/i, "Smart Edu"],
+  [/Poonawala/i, "Smart Edu"],
   [/vidyalakshmi/i, "PM Vidyalakshmi"],
   [/other bank/i, "Other Bank"],
   [/State Scheme/i, "State Scheme"],

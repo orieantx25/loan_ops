@@ -17,6 +17,7 @@ export type RawStudent = {
   sharedPropelld: string | null;
   sharedStudy4Buddy: string | null;
   sharedPoonawala: string | null;
+  sharedSmartEdu: string | null;
   sharedGyandhan: string | null;
   caseStatus: string | null;
   currentCaseStatus: string | null;
@@ -26,9 +27,17 @@ export type RawStudent = {
   needFldg: string | null;
   needVishwa: string | null;
   needVidyalakshmi: string | null;
+  processingVidyalakshmi: string | null;
+  sanctionedVidyalakshmi: string | null;
+  bankerStatus: string | null;
   reasonNotStarted: string | null;
   semFeePaid: string | null;
   semFeeCampus: string | null;
+  dropStatus: string | null;
+  intentRevertedToSst: string | null;
+  loanAmountSanctioned: string | null;
+  mentorFlag: string | null;
+  sstComments: string | null;
 };
 
 export type CanonicalStage =
@@ -89,6 +98,14 @@ export type Student = {
   semFeePaid: boolean;
   semFeeUnderReview: boolean;
   semFeeCampus: string;
+  processingVidyalakshmi: boolean;
+  sanctionedVidyalakshmi: boolean;
+  bankerStatus: string;
+  dropStatus: string;
+  intentRevertedToSst: string;
+  loanAmountSanctioned: string;
+  mentorFlag: string;
+  sstComments: string;
 };
 
 export type DashboardFilters = {
@@ -118,7 +135,7 @@ export const VENDORS = [
   "ICICI",
   "Propelld",
   "Study4Buddy",
-  "Poonawala Fincorp",
+  "Smart Edu",
   "GyanDhan",
 ] as const;
 
@@ -127,7 +144,7 @@ export const OVERLAP_VENDORS = [
   "ICICI",
   "Propelld",
   "Study4Buddy",
-  "Poonawala Fincorp",
+  "Smart Edu",
   "GyanDhan",
   "PM Vidyalakshmi",
   "Other Bank",

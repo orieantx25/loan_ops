@@ -16,6 +16,7 @@ import { StudentTable } from "../StudentTable";
 import { MobileCampusCards } from "./MobileCampusCards";
 import { MobileFilterSheet } from "./MobileFilterSheet";
 import { MobileVendorList } from "./MobileVendorList";
+import { OpsFlagsPanels } from "../OpsFlagsPanels";
 
 type Props = {
   filtered: Student[];
@@ -379,6 +380,10 @@ export function MobileDashboard({
           />
         </section>
 
+        <section id="ops" className="scroll-mt-48 space-y-3">
+          <OpsFlagsPanels ops={a.opsFlags} />
+        </section>
+
         <section id="students" className="scroll-mt-48 space-y-3 pb-8">
           <SectionLabel>Students</SectionLabel>
           <StudentTable
@@ -400,6 +405,24 @@ export function MobileDashboard({
           <StudentTable
             title="Need Vidyalakshmi Attention"
             students={filtered.filter((s) => s.needVidyalakshmi)}
+            onSelect={setSelected}
+            onClearFilters={reset}
+            collapsible
+            defaultOpen={false}
+          />
+          <StudentTable
+            title="Needs Vishwa's attention"
+            students={filtered.filter((s) => s.needVishwa)}
+            onSelect={setSelected}
+            onClearFilters={reset}
+            collapsible
+            defaultOpen={false}
+          />
+          <StudentTable
+            title="Might drop"
+            students={filtered.filter((s) =>
+              s.dropStatus.toLowerCase().includes("might drop"),
+            )}
             onSelect={setSelected}
             onClearFilters={reset}
             collapsible

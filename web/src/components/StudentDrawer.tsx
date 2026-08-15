@@ -66,6 +66,19 @@ export function StudentDrawer({
               label="Sem fee campus"
               value={student.semFeeCampus || "—"}
             />
+            <Row label="Drop status" value={student.dropStatus || "—"} />
+            <Row
+              label="Loan amount sanctioned"
+              value={student.loanAmountSanctioned || "—"}
+            />
+            <Row
+              label="Processing Vidyalakshmi"
+              value={student.processingVidyalakshmi ? "Yes" : "No"}
+            />
+            <Row
+              label="Sanctioned PM Vidyalakshmi"
+              value={student.sanctionedVidyalakshmi ? "Yes" : "No"}
+            />
             <Row
               label="Pending days"
               value={

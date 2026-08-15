@@ -113,11 +113,16 @@ function getLoanStatus(
 }
 
 export function headersFromRow(row: unknown[]): string[] {
-  return row.map((h, j) =>
-    h != null && String(h).trim() !== ""
-      ? cleanKey(String(h))
-      : `col_${j}`,
-  );
+  const seen: Record<string, number> = {};
+  return row.map((h, j) => {
+    const base =
+      h != null && String(h).trim() !== ""
+        ? cleanKey(String(h))
+        : `col_${j}`;
+    const n = (seen[base] ?? 0) + 1;
+    seen[base] = n;
+    return n === 1 ? base : `${base} (${n})`;
+  });
 }
 
 export function validateSheetHeaders(headers: string[]): string[] {
@@ -177,6 +182,7 @@ export function transformSheetRows(values: unknown[][]): RawStudent[] {
       sharedPropelld: cellStr(sharedProp),
       sharedStudy4Buddy: cellStr(getByPartial(keys, r, "Study4Buddy")),
       sharedPoonawala: cellStr(getByPartial(keys, r, "Poonawala")),
+      sharedSmartEdu: cellStr(getByPartial(keys, r, "Smart Edu")),
       sharedGyandhan: cellStr(getByPartial(keys, r, "GyanDhan")),
       caseStatus: cellStr(getByPartial(keys, r, "Initial Case")),
       currentCaseStatus: cellStr(getByPartial(keys, r, "CurrentCase")),
@@ -188,20 +194,32 @@ export function transformSheetRows(values: unknown[][]): RawStudent[] {
           cellStr(getByPartial(keys, r, "Loan required")),
         ),
       loanStatus: getLoanStatus(headers, keys, r, row),
-      needFldg: cellStr(getByPartial(keys, r, "FLDG")),
+      needFldg: cellStr(getByPartial(keys, r, "Need FLDG")),
       needVishwa: cellStr(getByPartial(keys, r, "Vishwa")),
-      needVidyalakshmi:
-        cellStr(getByPartial(keys, r, "Vidyalaksmi")) ??
-        cellStr(getByPartial(keys, r, "Vidyalakshmi")),
+      processingVidyalakshmi: cellStr(
+        getByPartial(keys, r, "Processing through"),
+      ),
+      sanctionedVidyalakshmi: cellStr(
+        getByPartial(keys, r, "Sanctioned by PM"),
+      ),
+      needVidyalakshmi: cellStr(getByPartial(keys, r, "Processing through")),
+      bankerStatus: cellStr(getExactish(keys, r, "Banker Status")),
       reasonNotStarted: cellStr(getByPartial(keys, r, "Reason if not")),
       semFeePaid:
         cellStr(getExactish(keys, r, "Sem Fee Paid")) ??
-        cellStr(getByPartial(keys, r, "Sem Fee Paid")) ??
-        (headers[40] ? cellStr(r[headers[40]]) : null),
+        cellStr(getByPartial(keys, r, "Sem Fee Paid")),
       semFeeCampus:
-        cellStr(getExactish(keys, r, "Sem Fee Campus")) ??
-        cellStr(getByPartial(keys, r, "Sem Fee Campus")) ??
-        (headers[41] ? cellStr(r[headers[41]]) : null),
+        cellStr(getExactish(keys, r, "Campus (2)")) ??
+        cellStr(getExactish(keys, r, "Sem Fee Campus")),
+      dropStatus: cellStr(getExactish(keys, r, "Drop status")),
+      intentRevertedToSst: cellStr(
+        getByPartial(keys, r, "Intent to be Reverted"),
+      ),
+      loanAmountSanctioned: cellStr(
+        getByPartial(keys, r, "Loan Amount Sanctioned"),
+      ),
+      mentorFlag: cellStr(getExactish(keys, r, "Mentor Flag")),
+      sstComments: cellStr(getExactish(keys, r, "SST Comments")),
     });
   }
 
