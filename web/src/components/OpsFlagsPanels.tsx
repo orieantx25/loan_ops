@@ -8,7 +8,7 @@ type Props = {
   ops: Analytics["opsFlags"];
 };
 
-export function OpsFlagsPanels({ ops }: Props) {
+export function FldgVidyalakshmiPanels({ ops }: Props) {
   const fldgTotals = ops.fldgByCampus.reduce(
     (acc, r) => ({
       needFldg: acc.needFldg + r.needFldg,
@@ -100,7 +100,13 @@ export function OpsFlagsPanels({ ops }: Props) {
           </tbody>
         </table>
       </div>
+    </div>
+  );
+}
 
+export function OpsFlagsPanels({ ops }: Props) {
+  return (
+    <div className="space-y-3">
       <SectionLabel>Ops flags</SectionLabel>
       <div className="kpi-scroll flex md:grid md:grid-cols-4 gap-3 overflow-x-auto pb-1">
         <KpiCard label="Drop — Might drop" value={ops.dropMight} tone="amber" />
@@ -121,17 +127,7 @@ export function OpsFlagsPanels({ ops }: Props) {
         />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <HBarList
-          title="Drop status"
-          items={ops.dropStatus
-            .filter((r) => r.label !== "(blank)")
-            .map((r) => ({
-              label: r.label,
-              count: r.count,
-            }))}
-        />
-        <HBarList
+      <HBarList
           title="SST comments"
           items={
             ops.sstComments.length
@@ -142,17 +138,6 @@ export function OpsFlagsPanels({ ops }: Props) {
               : [{ label: "No comments", count: 0 }]
           }
         />
-      </div>
-
-      {ops.loanAmountSanctioned.length > 0 ? (
-        <HBarList
-          title="Loan amount sanctioned"
-          items={ops.loanAmountSanctioned.map((r) => ({
-            label: r.label,
-            count: r.count,
-          }))}
-        />
-      ) : null}
 
       {ops.bankerStatus.length > 0 ? (
         <HBarList

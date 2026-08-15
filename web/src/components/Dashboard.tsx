@@ -23,7 +23,7 @@ import { StudentDrawer } from "./StudentDrawer";
 import { SectionNav } from "./SectionNav";
 import { DashboardHeader } from "./DashboardHeader";
 import { MobileDashboard } from "./mobile/MobileDashboard";
-import { OpsFlagsPanels } from "./OpsFlagsPanels";
+import { FldgVidyalakshmiPanels, OpsFlagsPanels } from "./OpsFlagsPanels";
 
 export function Dashboard({ raw }: { raw: RawStudent[] }) {
   const isMobile = useIsMobile();
@@ -273,6 +273,10 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
           </div>
         </section>
 
+        <section id="fldg" className="scroll-mt-4 space-y-3">
+          <FldgVidyalakshmiPanels ops={a.opsFlags} />
+        </section>
+
         <section id="vendors" className="scroll-mt-4 space-y-3">
           <SectionLabel>Vendors</SectionLabel>
           <VendorGrid stats={a.vendorStats} />
@@ -305,6 +309,11 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
           </div>
         </section>
 
+        <section id="campus" className="scroll-mt-4 space-y-3">
+          <SectionLabel>Campus</SectionLabel>
+          <CampusTable rows={a.campuses} />
+        </section>
+
         <section id="intake" className="scroll-mt-4 space-y-3">
           <SectionLabel>Intake</SectionLabel>
           <DataSheetPanels
@@ -315,11 +324,6 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
             initialCaseStatus={a.dataSheet.initialCaseStatus}
             currentCaseStatus={a.dataSheet.currentCaseStatus}
           />
-        </section>
-
-        <section id="campus" className="scroll-mt-4 space-y-3">
-          <SectionLabel>Campus</SectionLabel>
-          <CampusTable rows={a.campuses} />
         </section>
 
         <section id="pipeline" className="scroll-mt-4 space-y-3">
@@ -340,23 +344,14 @@ export function Dashboard({ raw }: { raw: RawStudent[] }) {
 
         <section id="risk" className="scroll-mt-4 space-y-3">
           <SectionLabel>Risk</SectionLabel>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <HBarList
-              title="Risk Dashboard"
-              items={a.risk.map((r) => ({
-                label: r.flag,
-                count: r.count,
-              }))}
-              accent
-            />
-            <HBarList
-              title="Drop-off Reasons"
-              items={a.reasons.map((r) => ({
-                label: r.bucket,
-                count: r.count,
-              }))}
-            />
-          </div>
+          <HBarList
+            title="Risk Dashboard"
+            items={a.risk.map((r) => ({
+              label: r.flag,
+              count: r.count,
+            }))}
+            accent
+          />
         </section>
 
         <section id="ops" className="scroll-mt-4 space-y-3">

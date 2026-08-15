@@ -16,7 +16,7 @@ import { StudentTable } from "../StudentTable";
 import { MobileCampusCards } from "./MobileCampusCards";
 import { MobileFilterSheet } from "./MobileFilterSheet";
 import { MobileVendorList } from "./MobileVendorList";
-import { OpsFlagsPanels } from "../OpsFlagsPanels";
+import { FldgVidyalakshmiPanels, OpsFlagsPanels } from "../OpsFlagsPanels";
 
 type Props = {
   filtered: Student[];
@@ -303,6 +303,10 @@ export function MobileDashboard({
           ) : null}
         </section>
 
+        <section id="fldg" className="scroll-mt-48 space-y-3">
+          <FldgVidyalakshmiPanels ops={a.opsFlags} />
+        </section>
+
         <section id="vendors" className="scroll-mt-48 space-y-3">
           <SectionLabel>Vendors</SectionLabel>
           <MobileVendorList stats={a.vendorStats} />
@@ -330,6 +334,11 @@ export function MobileDashboard({
           </div>
         </section>
 
+        <section id="campus" className="scroll-mt-48 space-y-3">
+          <SectionLabel>Campus</SectionLabel>
+          <MobileCampusCards rows={a.campuses} />
+        </section>
+
         <section id="intake" className="scroll-mt-48 space-y-3">
           <SectionLabel>Intake</SectionLabel>
           <DataSheetPanels
@@ -340,11 +349,6 @@ export function MobileDashboard({
             initialCaseStatus={a.dataSheet.initialCaseStatus}
             currentCaseStatus={a.dataSheet.currentCaseStatus}
           />
-        </section>
-
-        <section id="campus" className="scroll-mt-48 space-y-3">
-          <SectionLabel>Campus</SectionLabel>
-          <MobileCampusCards rows={a.campuses} />
         </section>
 
         <section id="pipeline" className="scroll-mt-48 space-y-3">
@@ -370,13 +374,6 @@ export function MobileDashboard({
               count: r.count,
             }))}
             accent
-          />
-          <HBarList
-            title="Drop-off Reasons"
-            items={a.reasons.map((r) => ({
-              label: r.bucket,
-              count: r.count,
-            }))}
           />
         </section>
 
