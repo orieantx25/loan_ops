@@ -153,7 +153,11 @@ export function transformSheetRows(values: unknown[][]): RawStudent[] {
       name: cellStr(r["Name"]),
       mobile: normalizeMobile(r["Mobile Number"]),
       provisionalId: cellStr(r["Provisional ID"]),
-      campus: cellStr(r["Campus"]),
+      campus: cellStr(getExactish(keys, r, "Campus chosen")),
+      semFeeCampus:
+        cellStr(getExactish(keys, r, "Campus (2)")) ??
+        cellStr(getExactish(keys, r, "Sem Fee Campus")) ??
+        cellStr(getExactish(keys, r, "Campus")),
       needLoanSst: cellStr(getByPartial(keys, r, "Need Loan")),
       criticality: cellStr(getByPartial(keys, r, "Criticality")),
       scholarship: (r["Scholarship"] as number | string | null) ?? null,
@@ -197,9 +201,6 @@ export function transformSheetRows(values: unknown[][]): RawStudent[] {
       semFeePaid:
         cellStr(getExactish(keys, r, "Sem Fee Paid")) ??
         cellStr(getByPartial(keys, r, "Sem Fee Paid")),
-      semFeeCampus:
-        cellStr(getExactish(keys, r, "Campus (2)")) ??
-        cellStr(getExactish(keys, r, "Sem Fee Campus")),
       dropStatus: cellStr(getExactish(keys, r, "Drop status")),
       intentRevertedToSst: cellStr(
         getByPartial(keys, r, "Intent to be Reverted"),
